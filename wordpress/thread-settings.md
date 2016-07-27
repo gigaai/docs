@@ -12,7 +12,7 @@ You can set a greeting for new conversations. This can be used to communicate yo
 
 To set your Messsenger Greeting text, the easiest way is go to the 'Messaging' tab in your Page settings.
 
-You can also configure Greeting text by go to edit your `/giga-messenger-bot/config.php`, set your Greeting Text under `greeting_text` section and go to `https://domain.com/giga-messenger-bot/public/?giga_action=updateGreetingText`
+You can also configure Greeting text by go to `Giga AI\Settings`, set your Greeting Text under `Greeting Text` section and go to `https://domain.com/messenger/?giga_action=updateGreetingText`
 
 ## Get Started Button
 When the Get Started button is tapped, you can send a text message or a Structured Message, containing images and buttons.
@@ -25,7 +25,7 @@ The image below shows how the Get Started button can be used to introduce your b
 
 ### Creating Get Started Button: 
 
-Just go to `https://domain.com/giga-messenger-bot/public/?giga_action=updateGetStartedButton`
+Just go to `https://domain.com/messenger/?giga_action=updateGetStartedButton`
 
 ### Handling Get Started Button:
 Simply answer the GIGA_GET_STARTED_PAYLOAD postback event, like so:
@@ -35,8 +35,8 @@ $bot->answer('payload:GIGA_GET_STARTED_PAYLOAD', 'Hi [first_name]!, welcome to o
 ```
 
 ### Removing Get Started Button:
-- Open `/giga-messenger-bot/config.php`, then remove `get_started_button_payload` section or simply set its value to empty string.
-- Go to `https://domain.com/giga-messenger-bot/public/?giga_action=updateGetStartedButton`
+- Go to `Giga AI\Settings`, then set `Get Started Button Payload` section to empty.
+- Open `https://domain.com/messenger/?giga_action=updateGetStartedButton`
 
 ## Persistent Menu
 Documentation for persistent menu will be available soon.
