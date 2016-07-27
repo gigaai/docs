@@ -1,12 +1,21 @@
 # Message Types
 ---
-When bot received an action, we need to create responses for it. FMB supports sending all types of messages which Messenger provided. You can send text, images or Structured Messages which have several templates.
+Giga is supports sending all types of messages which Messenger provided. You can send **Text**, **Images**, **Audio**, **Videos**, **Files**, or **Structured Messages** which have several templates.
 
 ## Message Types
 
 ### Text and Image Messages
 You can send text and image messages in your conversation.
 ![Text and Image](https://scontent-hkg3-1.xx.fbcdn.net/t39.2178-6/12532937_1707565839531937_1916590448_n.png)
+
+### Audio
+
+
+### Video
+
+
+### File
+
 
 ### Structured Messages (Button, Generic and Receipt)
 Structured Messages support multiple templates to enable different kinds of use cases. The Button and Generic Template can render buttons that open a URL or make a back-end call to your webhook. The Receipt Template can be used to send a receipt.

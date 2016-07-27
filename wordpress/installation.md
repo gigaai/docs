@@ -7,20 +7,22 @@
 ## Installation
 
 ### Site Requirements
-Giga Messenger Bot (GigaAI) has been tested and compatibility with
+In order to run Giga Messenger Bot (GigaAI), your server should meet these minimum requirements:
 
-- WordPress 4.0+
-- PHP 5.3+
+- PHP 5.3.2+
 - `cURL` should enabled
 - Your site (or webhook) should `https`
 
 However, it's highly recommended that you run latest WordPress & PHP version.
 
-### Installing Giga
-1. Download `giga-ai.zip` and unzip the package
-1. Upload `giga-ai` folder to the `wp-content/plugins/` directory
-1. Activate the plugin through the Plugins menu in WordPress
-1. Start using the plugin through the menu `Settings\Giga AI`
+### Installing Giga Messenger Bot
+
+Like other WordPress plugin, you just do some simple steps to install.
+
+1. Download `giga-messenger-bot.zip` and unzip the package.
+1. Copy `giga-messenger-bot` directory to `/wp-content/plugins` directory.
+1. Set CHMOD read-writable permission to your `/giga-messenger-bot/cache/` directory.
+1. Activate plugin through `wp-admin/plugins` screen.
 
 ### Configure Webhook
 After activated, if your website has **permalink** enabled, FMB will automatically creates two links which are: `https://yourwebsite.com/messenger/` (webhook) and `https://yourwebsite.com/messenger/subscribe` (subscribe). Try accessing these URLs to verify if it works (They shouldn't show 404 or some of your pages with content).

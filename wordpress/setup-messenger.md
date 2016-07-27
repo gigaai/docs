@@ -6,33 +6,34 @@ Create a new [Facebook App](https://developers.facebook.com/quickstarts/?platfor
 
 ## Setup Webhook
 
-- In your Facebook App. Navigate to Webhooks menu item, click New Subscription, then choose Page. A dialog will shows up:
+In your Facebook App. Navigate to Webhooks menu item, click New Subscription, then choose Page. A dialog will shows up:
 	
-	![New Page Subscription](https://gigaai.com/images/new-page-subscription.jpg)
-    
-    - In "Callback URL", enter your webhook URL (default is `https://yourwebsite.com/messenger`).
-    - In "Verify Token", enter `GigaAI`
-    - In "Subscription Field", check `message_deliveries`, `messages`, `messaging_optins`, and `messaging_postbacks`
-    - Click <kbd>Verify and Save</kbd>
+![New Page Subscription](/images/page-subscription.png)
 
-If these above steps succeed, you'll see this:
-![Webhook Success](https://gigaai.com/images/webhook.jpg)
+- In "Callback URL", enter your webhook URL (default is `https://domain.com/messenger/`).
+- In "Verify Token", enter `GigaAI`
+- In "Subscription Field", check `message_deliveries`, `messages`, `messaging_optins`, `messaging_postbacks`, `message_echoes`, `message_reads`, and `messaging_account_linking`.
+- Click <kbd>Verify and Save</kbd>
 
 ## Setup Messenger
+
 The next step is make a connection between Website <=> App <=> Page, so all messages come from page pass through app to website and vice versa.
 
 - In your Facebook App. Navigate Messenger, below Webhooks item.
 - In `Token Generation` section, select a your page, you'll need to confirm permission for that page. After that step, you'll got Page Access Token.
-![Page Access Token](https://gigaai.com/images/token-generation.jpg)
-- Click to copy that token, go to Facebook Messenger Bots settings and paste that in Page Access Token input
-- *(Optional)* Go to your FB page, jump to About tab, copy Facebook Page ID to Page ID input in Facebook Messenger Bots settings
-	![Page ID](https://gigaai.com/images/facebook-page-id.jpg)
-- Click <kbd>Save Changes</kbd>
+	![Page Access Token](/images/page-access-token.png)
+- Click to copy that token, then Click <kbd>Save Changes</kbd>.
+- Open `giga-messenger-bot/config.php` and paste that copied text to `page_access_token` section.
+- *(Optional)* Copy your page ID, paste it to `page_id` section.
 
-- Now, visit your subscribe URL (default is `https://yourwebsite.com/messenger/subscribe`). If you see a message:
+Now, visit your subscribe URL (default is `https://domain.com/messenger/subscribe`). You should see this message:
 
 <div class="h1">Congratulation! Facebook Bot is successfully subscribed your webhook.</div>
 
-Congratulation. Your bot is ready!
-
 > Please remember that you can visit this subscribe URL anytime to check connection status.
+
+## Test Your First Message
+
+Try to send `hi` to your page with your app's administrator account. If you get reply from your page. Congratulation! Otherwise, please check your server requirements or previous steps.
+
+![Greeting](/images/greeting.jpg)
