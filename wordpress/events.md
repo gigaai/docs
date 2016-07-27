@@ -24,4 +24,4 @@ Bot answers: 'And you?'
 ```
 
 ## Response to People Actions
-To response to people actions, we'll create Nodes, [Giga API](api) brings a convenience way to do that.
+To response to people actions, we'll create Nodes, both [Bot Designer](bot-designer) and [Giga API](api) brings a convenience way to do that.

@@ -5,12 +5,12 @@
 ## Send a Basic Message
 To send dynamic data. Simply hook into `giga_pre_run` action, you'll have `$bot` variable, which is the instance of `MessengerBot` class, that you can use it to create nodes.
 
-In this example, we'll send `hola!` when people text `hello`. Note that we have `answers` method which we can use it to set response for each action. 
+In this example, we'll send `hola!` when people text `hello`. Note that we have `answers` method which we can use it to set response for each action. Open your theme `functions.php` or any file of your plugin and add this code:
 
 ```
 add_action( 'giga_pre_run', function ($bot) {
 	$bot->answer( 'hello', 'hola!' );
-} );
+});
 ```
 Simply huh!?
 

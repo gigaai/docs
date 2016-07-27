@@ -6,7 +6,7 @@
 ![Designing a Bot](https://facebookmessengerbots.com/images/bot-settings.jpg)
 
 ## Start Using Bot Designer
-To start using Bot Designer, go to Giga Messenger Bot under Settings menu in your *wp-admin*, and start define it in Bot Designer section.
+To start using Bot Designer, go to Giga AI\Designer menu in your *wp-admin*
 
 ## Response to People Actions
 To response to each people action, we can create a node with related action. This part show you how to do it with Bot Designer.

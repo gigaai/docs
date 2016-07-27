@@ -1,7 +1,9 @@
 # Advanced Text Matching
 ---
 
-Giga is case insensitive. When people text you, they can enter anything which you can't expected all of them. Luckily, Giga ships with powerful text matching mechanism, you have many methods to match text.
+> Giga is **case insensitive**. 
+
+When people text you, they can enter anything which you can't expected all of them. Luckily, Giga ships with powerful text matching mechanism, you have many methods to match text.
 
 ## SQL Like Syntax
 You can also use `%` (percent) character like SQL LIKE statement to match with any characters. For example. if you set "`%buy%gun%`", then bot will auto reply if people message you: "*buy gun*", or "*buy me a gun*", or "*I want to buy gun*", etc.

@@ -6,6 +6,7 @@
 	- [Events & Nodes](/docs/wordpress/events)
 	- [Bot Designer](/docs/wordpress/bot-designer)
 - Advanced
+	- [Dynamic Data](/docs/wordpress/dynamic-data)
 	- [API Basic](/docs/wordpress/api)
 	- [Shortcodes](/docs/wordpress/shortcodes)
 	- [Text Matching](/docs/wordpress/text-matching)
