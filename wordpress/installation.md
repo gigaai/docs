@@ -1,7 +1,8 @@
 # Installation
 
-> It's recommended that you read [Messenger Platform's Overview](https://developers.facebook.com/docs/messenger-platform/product-overview) before continue reading this documentation.
-
+> 
+- It's recommended that you read [Messenger Platform's Overview](https://developers.facebook.com/docs/messenger-platform/product-overview) before continue reading this documentation.
+- Please note that this documentation is for WordPress version only. If you use PHP package, try [PHP Standalone](/docs/standalone) documentation
 ***
 
 ## Installation
