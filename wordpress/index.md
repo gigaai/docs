@@ -1,0 +1,13 @@
+- Setup
+	- [Installation](/docs/wordpress/installation)
+	- [Setup Messenger](/docs/wordpress/setup-messenger)
+- Basics
+	- [Actions & Nodes](/docs/wordpress/actions)
+	- [Message Types](/docs/wordpress/message-types)
+	- [Bot Designer](/docs/wordpress/bot-designer)
+	- [Text Matching](/docs/wordpress/text-matching)
+- Advanced
+	- [Dynamic Data](/docs/wordpress/dynamic-data)
+	- [Giga API](/docs/wordpress/api)
+	- [Handle Postback](/docs/wordpress/handle-postback)
+	- [Intended Actions](/docs/wordpress/intended-actions)
