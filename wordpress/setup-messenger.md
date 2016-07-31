@@ -23,8 +23,8 @@ The next step is make a connection between Website <=> App <=> Page, so all mess
 - In `Token Generation` section, select a your page, you'll need to confirm permission for that page. After that step, you'll got Page Access Token.
 	![Page Access Token](/images/page-access-token.png)
 - Click to copy that token, then Click <kbd>Save Changes</kbd>.
-- Open `giga-messenger-bot/config.php` and paste that copied text to `page_access_token` section.
-- *(Optional)* Copy your page ID, paste it to `page_id` section.
+- Navigate to **WP Admin\Giga AI** and paste that copied text to **Page Access Token** section.
+- Paste your page id to **Page ID** section.
 
 Now, visit your subscribe URL (default is `https://domain.com/messenger/subscribe`). You should see this message:
 
