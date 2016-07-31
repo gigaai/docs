@@ -1,14 +1,14 @@
 # Giga API
 ---
-> In the previous section, we've learn how to send dynamic data by using `giga_pre_run` hook and use `$bot` instance with `$bot->answers()` method. Now we'll learn more about that class and use some more advanced usage:
+> In the previous section, we've learn how to send dynamic data by using `fmb_pre_run` hook and use `$bot` instance with `$bot->answer()` method. Now we'll learn more about that class and use some more advanced usage:
 
 ## Sending Message
 
-In the previous step, you've knew that in order to sending a message, we'll use `$bot->answer();` method.
+In order to sending a message, we'll use `$bot->answer();` method, like previous example.
 
 Another example:
 ```
-// My bot loves Spanish and it say hola! when people say hello
+// Bot says hola! when people say hello
 $bot->answer( 'hello', 'hola!' );
 ```
 
@@ -228,7 +228,7 @@ $bot->answer('What does the fox says?', [
     // Send 3 texts
     'Dog goes woof',
     'Cat goes meow',
-    'Bird goes squeek',
+    'Bird goes tweet',
 
     // Also, send video
     'https://thefox.com/video.avi'
