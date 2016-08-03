@@ -18,14 +18,14 @@ You can use regular expression by using `regex:/your-regex/` syntax. For example
 
 Example:
 ```
-$bot->answers('regex:/^[0-9]*$/', 'You have just enter numeric characters!');
+$bot->answer('regex:/^[0-9]*$/', 'You have just enter numeric characters!');
 ```
 
 ## Match with one of keywords list
 You can use `(this|syntax)` to match with either *this* or *syntax*. For example. `(foo|bar)` will matches with either *foo* or *bar*
 
 ```
-$bot->answers('(hello|hi)', 'Hi man');
+$bot->answer('(hello|hi)', 'Hi man');
 ```
 
 Of course, you can combine it with all another text matching method. For example:

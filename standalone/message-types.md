@@ -35,7 +35,6 @@ Parameter Name | Description | Type | Required?
 `content` | Text content | String | Y
 
 ### Image
-
 Parameter Name | Description | Type | Required?
 --- | --- | --- | ---
 `url` | URL of Image | String | Y

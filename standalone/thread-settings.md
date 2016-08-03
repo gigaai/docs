@@ -39,4 +39,5 @@ $bot->answer('payload:GIGA_GET_STARTED_PAYLOAD', 'Hi [first_name]!, welcome to o
 - Go to `https://domain.com/giga-messenger-bot/public/?giga_action=updateGetStartedButton`
 
 ## Persistent Menu
+
 Documentation for persistent menu will be available soon.

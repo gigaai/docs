@@ -237,7 +237,7 @@ $bot->answer('What does the fox says?', [
     // Send 3 texts
     'Dog goes woof',
     'Cat goes meow',
-    'Bird goes squeek',
+    'Bird goes tweet',
 
     // Also, send video
     'https://thefox.com/video.avi'
