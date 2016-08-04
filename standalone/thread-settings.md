@@ -40,4 +40,49 @@ $bot->answer('payload:GIGA_GET_STARTED_PAYLOAD', 'Hi [first_name]!, welcome to o
 
 ## Persistent Menu
 
-Documentation for persistent menu will be available soon.
+The Persistent Menu is a menu that is always available to the user. This menu should contain top-level actions that users can enact at any point. Having a persistent menu easily communicates the basic capabilities of your bot for first-time and returning users.
+The menu can be invoked by a user, by tapping on the 3-caret icon on the left of the composer.
+
+![Persistent Menu](https://scontent-hkg3-1.xx.fbcdn.net/t39.2365-6/13509228_581512925362726_878211705_n.png)
+
+### Creating Persistent Menu
+
+- Open `/giga-messenger-bot/config.php`, in the `persistent_menu` section, enter menu items.
+- Go to `https://domain.com/giga-messenger-bot/public/?giga_action=updatePersistentMenu`
+
+Menu items example:
+
+```
+'persistent_menu' => [
+  [
+      "type" => "postback",
+      "title" => "Help",
+      "payload" => "DEVELOPER_DEFINED_PAYLOAD_FOR_HELP"
+  ],
+  [
+      "type" => "postback",
+      "title" => "Start a New Order",
+      "payload" => "DEVELOPER_DEFINED_PAYLOAD_FOR_START_ORDER"
+  ],
+  [
+      "type" => "web_url",
+      "title" => "View Website",
+      "url" => "http://petersapparel.parseapp.com/"
+  ]
+];
+```
+
+#### Menu Item Object
+Parameter Name | Description | Type | Required?
+--- | --- | --- | ---
+`type` | `web_url` or `postback` | String | Y
+`title` | Menu item title. Limit 30 characters. | String | Y
+`url` | For web_url buttons, this URL is opened in a mobile browser when the button is tapped | String | Y, if type is `web_url`
+`payload` | For postback buttons, this data will be sent back to you via webhook. Limit 1000 characters | String | Y, if type is `postback`
+
+### Handling Postback Event
+Simply handle it like normal buttons.
+
+### Deleting Persistent Menu
+- Open `/giga-messenger-bot/config.php`, then remove `persistent_menu` section or simply set its value to empty string.
+- Go to `https://domain.com/giga-messenger-bot/public/?giga_action=updatePersistentMenu`
