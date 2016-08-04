@@ -1,13 +1,19 @@
 # Installation
+- [Installation](#installation)
+	- [Server Requirements](#server-requirements)
+	- [Installing Giga Messenger Bot](#installing-giga-messenger-bot)
+	- [Secure Tunnels to Localhost](#secure-tunnels-to-localhost)
 
+***
 > 
 - This installation guide is applied for PHP Standalone version. If you're using WordPress plugin. Go to [WordPress](/docs/wordpress) documentation instead.
 - It's recommended that you read [Messenger Platform's Overview](https://developers.facebook.com/docs/messenger-platform/product-overview) before continue reading this documentation.
 
-***
 
+<a name="installation"></a>
 ## Installation
 
+<a name="server-requirements"></a>
 ### Server Requirements
 In order to run Giga Messenger Bot (GigaAI), your server should meet these minimum requirements:
 
@@ -19,6 +25,7 @@ Most of server/hosting providers is already support PHP 5.3+ and cURL. You can a
 
 Of course, it's highly recommended that you run latest stable PHP version.
 
+<a name="installing-giga-messenger-bot"></a>
 ### Installing Giga Messenger Bot
 - Download `giga-messenger-bot.zip` and unzip the package.
 - Copy `giga-messenger-bot` directory to your web server.
@@ -27,5 +34,6 @@ Of course, it's highly recommended that you run latest stable PHP version.
 
 > Of course, you can rename `giga-messenger-bot` to whatever you want. Or point your domain to `/public/` URL for security purpose. All is well.
 
+<a name="secure-tunnels-to-localhost"></a>
 ### Secure Tunnels to Localhost
 Let's assume that you want to test your bots in your development machine before deploying. You'll need to let Facebook connect to your PC and it should have SSL enabled. To simply these steps, we'd recommend that you use [ngrok](https://ngrok.com), it will automatically creates a secure public URL to your local webserver with format: `https://RANDOM.ngrok.io`.
