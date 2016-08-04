@@ -1,7 +1,25 @@
 # Giga API
+- [Start Point](#start-point)
+- [Sending Message](#sending-message)
+- [Sending Media](#sending-media)
+    - [Image](#image)
+    - [Audio and Video](#audio-and-video)
+    - [File](#file)
+    - [Force Detection](#force-detection)
+- [Sending Structured Message](#sending-structured-message)
+    - [Button](#button)
+    - [Generic](#generic)
+    - [Receipt](#receipt)
+- [Responding Click Event](#responding-click-event)
+- [Multiple Responses per Event](#multiple-responses)
+- [Multiple Nodes](#multiple-nodes)
+- [Default Answer](#default-answer)
+
 ---
+
 > It's time to teach your bot now. In this section, you'll learn how to teach her with powerful Giga API.
 
+<a name="start-point"></a>
 ## Start Point
 In the [Setup Messenger](/docs/standalone/setup-messenger) section, you see that when we say `hi`, bot says `Hi [first_name]!`, how can she do it?
 
@@ -13,6 +31,7 @@ $bot->answer('hi', 'Hi [first_name]!');
 
 Now, try to change both parameter and experience it yourself.
 
+<a name="sending-message"></a>
 ## Sending Message
 
 In the previous step, you've knew that in order to sending a message, we'll use `$bot->answer();` method.
@@ -23,8 +42,10 @@ Another example:
 $bot->answer( 'hello', 'hola!' );
 ```
 
+<a name="sending-media"></a>
 ## Sending Media
 
+<a name="image"></a>
 ### Image
 
 Let's send your image when people says: *show me your photo*, just provide your photo URL instead of text.
@@ -34,6 +55,7 @@ Let's send your image when people says: *show me your photo*, just provide your 
 $bot->answer('show me your photo', 'https://foo.bar/image.jpg');
 ```
 
+<a name="audio-and-video"></a>
 ### Audio and Video
 
 Bot can sends Audio or Video message also, just provide URLs like Image
@@ -46,6 +68,7 @@ $bot->answer('show me your voice', 'https://foo.bar/voice.mp3');
 $bot->answer('show me your video', 'https://foo.bar/video.avi');
 ```
 
+<a name="file"></a>
 ### File
 
 If you give URL for bot, which neither Image, Audio nor Video, it will send File
@@ -55,6 +78,7 @@ If you give URL for bot, which neither Image, Audio nor Video, it will send File
 $bot->answer('send me your file', 'https://foo.bar/doc.pdf');
 ```
 
+<a name="force-detection"></a>
 ### Force Detection
 
 Sometimes, you'll want to send Image, Audio, or Video as File. And sometimes, your URL doesn't include file extension, so you'll want to tell the bot which exactly media type to send to user. Just prepend your extension before your URL. For example:
@@ -67,8 +91,10 @@ $bot->answer('send me your image as file', 'file:http://foo.bar/image.jpg');
 $bot->answer('image', 'image:https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=350&h=150')
 ```
 
+<a name="sending-structured-message"></a>
 ## Sending Structured Message
 
+<a name="button"></a>
 ### Button
 
 Do you remember [Message Types](message-types), it's time to quick look about it. We have to remember attributes to pass to button message.
@@ -96,6 +122,7 @@ $bot->answer('Who are you?', [
 ]);
 ```
 
+<a name="generic"></a>
 ### Generic
 
 Send a Generic Message is same as Button Message. You can pass their elements to an array of elements:
@@ -162,6 +189,7 @@ $bot->answer('Show me your new product', [
 ]);
 ```
 
+<a name="receipt"></a>
 ### Receipt
 
 This example show you how to send receipt. Please note that receipt requires unique order number, we use `rand(0,100000)` just for demo purpose. If you set static value, it won't work.
@@ -219,7 +247,8 @@ $bot->answer('receipt', [
 ]);
 ```
 
-## Response Click Event
+<a name="responding-click-event"></a>
+## Responding Click Event
 In above examples, we've only tried to response Text event, what about Click? 
 
 If user click on a `web_url` button, it will automatically redirect to that URL. Otherwise, to handle Click event on payload button. Just do the same as Text but append `payload:` before
@@ -229,6 +258,7 @@ If user click on a `web_url` button, it will automatically redirect to that URL.
 $bot->answer('payload:USER_CLICKED_HEISENBERG_BUTTON', 'You are Heisenberg?');
 ```
 
+<a name="multiple-responses"></a>
 ## Multiple Responses per Event
 You can send multiple responses per event, just pass them to array instead of simple string. Of course, you can send any message types which you want:
 
@@ -244,6 +274,7 @@ $bot->answer('What does the fox says?', [
 ]);
 ```
 
+<a name="multiple-nodes"></a>
 ## Multiple Nodes
 You can also create multiple nodes at one time. To do so, pass an array to first parameter on `$bot->answer()` method:
 
@@ -254,7 +285,7 @@ $bot->answer([
     'tell me your name' => 'My name is FMB'
 ]);
 ```
-
+<a name="default-answer"></a>
 ## Default Answer
 Of course, Bot can't answer all people questions or click events if they haven't been defined by you. To create responses for unexpected events, you can use default answer. The syntax is:
 
