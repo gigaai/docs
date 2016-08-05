@@ -2,6 +2,7 @@
 - [SQL Like Syntax](#sql-like-syntax)
 - [Regular Expression](#regular-expression)
 - [Match with one of keywords list](#match-with-one-of-keywords-list)
+
 ---
 
 > Giga is **case insensitive**. 
