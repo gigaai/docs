@@ -122,6 +122,8 @@ $bot->answer('Who are you?', [
 ]);
 ```
 
+**Please note that you can send up to 3 buttons per group**
+
 <a name="generic"></a>
 ### Generic
 
@@ -188,7 +190,7 @@ $bot->answer('Show me your new product', [
     ]
 ]);
 ```
-
+**Bubbles is limited to 10**
 <a name="receipt"></a>
 ### Receipt
 

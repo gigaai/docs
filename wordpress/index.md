@@ -1,16 +1,18 @@
-- Setup
+- Getting Started
 	- [Installation](/docs/wordpress/installation)
 	- [Setup Messenger](/docs/wordpress/setup-messenger)
-- Basics
+- Core Concepts
 	- [Message Types](/docs/wordpress/message-types)
 	- [Events & Nodes](/docs/wordpress/events)
-	- [Bot Designer](/docs/wordpress/bot-designer)
-	- [API Basic](/docs/wordpress/api)
-    - [Shortcodes](/docs/wordpress/shortcodes)
     - [Text Matching](/docs/wordpress/text-matching)
     - [Auto Stop](/docs/wordpress/auto-stop)
-- Advanced
+    - [Shortcodes](/docs/wordpress/shortcodes)
+- Dashboard
+	- [Bot Designer](/docs/wordpress/bot-designer)
+- API
+	- [API Basic](/docs/wordpress/api)
 	- [Dynamic Data](/docs/wordpress/dynamic-data)
 	- [Custom Callback](/docs/wordpress/custom-callback)
 	- [Intended Actions](/docs/wordpress/intended-actions)
+	- [Quick Replies](/docs/wordpress/quick-replies)
 	- [Thread Settings](/docs/wordpress/thread-settings)

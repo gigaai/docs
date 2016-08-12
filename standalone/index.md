@@ -1,14 +1,15 @@
-- Setup
+- Getting Started
 	- [Installation](/docs/standalone/installation)
 	- [Setup Messenger](/docs/standalone/setup-messenger)
-- Basics
+- Core Concepts
 	- [Message Types](/docs/standalone/message-types)
 	- [Events & Nodes](/docs/standalone/events)
-	- [API Basic](/docs/standalone/api)
     - [Shortcodes](/docs/standalone/shortcodes)
     - [Text Matching](/docs/standalone/text-matching)
     - [Auto Stop](/docs/standalone/auto-stop)
-- Advanced
+- API
+	- [API Basic](/docs/standalone/api)
 	- [Custom Callback](/docs/standalone/custom-callback)
 	- [Intended Actions](/docs/standalone/intended-actions)
+	- [Quick Replies](/docs/standalone/quick-replies)
 	- [Thread Settings](/docs/standalone/thread-settings)

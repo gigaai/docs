@@ -32,8 +32,7 @@ $bot->answer('I want to check my flight status', 'Please give me your email')
 After this step, the next message of user will be marked as *email*. We'll now handle that intended action. Just use `answer()` method with `@` sign before intended action name:
 
 ```
-$bot->answer('@email', function ($bot) 
-{
+$bot->answer('@email', function ($bot) {
 	// Process your business here
 	
 	// Then response user
@@ -56,7 +55,7 @@ $bot->answer('@email', function ($bot) {
   	if ( ! filter_var($received_text, FILTER_VALIDATE_EMAIL))
 	{
 		$bot->say('Your email is not valid! Please enter again')
-			->wait('email', 'text');
+			->wait('email');
 
 		return;
 	}
