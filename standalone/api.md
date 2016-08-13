@@ -10,7 +10,7 @@
     - [Button](#button)
     - [Generic](#generic)
     - [Receipt](#receipt)
-- [Responding Click Event](#responding-click-event)
+- [Handling Click Event](#handling-click-event)
 - [Multiple Responses per Event](#multiple-responses)
 - [Multiple Nodes](#multiple-nodes)
 - [Default Answer](#default-answer)
@@ -249,8 +249,8 @@ $bot->answer('receipt', [
 ]);
 ```
 
-<a name="responding-click-event"></a>
-## Responding Click Event
+<a name="handling-click-event"></a>
+## Handling Click Event
 In above examples, we've only tried to response Text event, what about Click? 
 
 If user click on a `web_url` button, it will automatically redirect to that URL. Otherwise, to handle Click event on payload button. Just do the same as Text but append `payload:` before

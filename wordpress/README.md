@@ -1,3 +1,3 @@
-# Facebook Messenger Bots
+# Giga AI WordPress
 
-This is the repository of Facebook Messenger Bots documentation. Official URL is located at: [https://facebookmessengerbots.com/docs](https://facebookmessengerbots.com/docs)
+This is the repository of Giga AI documentation. Official URL is located at: [https://giga.ai/docs](https://giga.ai/docs)
