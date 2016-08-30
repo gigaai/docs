@@ -4,11 +4,11 @@
 - Core Concepts
 	- [Message Types](/docs/standalone/message-types)
 	- [Events & Nodes](/docs/standalone/events)
-    - [Shortcodes](/docs/standalone/shortcodes)
-    - [Text Matching](/docs/standalone/text-matching)
     - [Auto Stop](/docs/standalone/auto-stop)
 - API
 	- [API Basic](/docs/standalone/api)
+	- [Shortcodes](/docs/standalone/shortcodes)
+    - [Text Matching](/docs/standalone/text-matching)
 	- [Custom Callback](/docs/standalone/custom-callback)
 	- [Intended Actions](/docs/standalone/intended-actions)
 	- [Quick Replies](/docs/standalone/quick-replies)

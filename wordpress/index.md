@@ -4,13 +4,13 @@
 - Core Concepts
 	- [Message Types](/docs/wordpress/message-types)
 	- [Events & Nodes](/docs/wordpress/events)
-    - [Text Matching](/docs/wordpress/text-matching)
     - [Auto Stop](/docs/wordpress/auto-stop)
-    - [Shortcodes](/docs/wordpress/shortcodes)
 - Dashboard
 	- [Bot Designer](/docs/wordpress/bot-designer)
 - API
 	- [API Basic](/docs/wordpress/api)
+	- [Text Matching](/docs/wordpress/text-matching)
+	- [Shortcodes](/docs/wordpress/shortcodes)
 	- [Dynamic Data](/docs/wordpress/dynamic-data)
 	- [Custom Callback](/docs/wordpress/custom-callback)
 	- [Intended Actions](/docs/wordpress/intended-actions)
