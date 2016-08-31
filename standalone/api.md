@@ -52,7 +52,7 @@ Let's send your image when people says: *show me your photo*, just provide your 
 
 ```
 // Bot sends photo when people asked for it
-$bot->answer('show me your photo', 'https://foo.bar/image.jpg');
+$bot->answer('show me your photo', 'http://www.gstatic.com/webp/gallery/1.jpg');
 ```
 
 <a name="audio-and-video"></a>
@@ -62,10 +62,10 @@ Bot can sends Audio or Video message also, just provide URLs like Image
 
 ```
 // Send an audio when people say: 'show me your voice'
-$bot->answer('show me your voice', 'https://foo.bar/voice.mp3');
+$bot->answer('show me your voice', 'http://www.noiseaddicts.com/samples_1w72b820/181.mp3');
 
 // Send a video when people say: 'show me your video'
-$bot->answer('show me your video', 'https://foo.bar/video.avi');
+$bot->answer('show me your video', 'http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4');
 ```
 
 <a name="file"></a>
@@ -75,7 +75,7 @@ If you give URL for bot, which neither Image, Audio nor Video, it will send File
 
 ```
 // Send File for user
-$bot->answer('send me your file', 'https://foo.bar/doc.pdf');
+$bot->answer('send me your file', 'http://www.pdf995.com/samples/pdf.pdf');
 ```
 
 <a name="force-detection"></a>
@@ -85,7 +85,7 @@ Sometimes, you'll want to send Image, Audio, or Video as File. And sometimes, yo
 
 ```
 // Send Image as File
-$bot->answer('send me your image as file', 'file:http://foo.bar/image.jpg');
+$bot->answer('send me your image as file', 'file:http://www.gstatic.com/webp/gallery/1.jpg');
 
 // Send URL which doesn't have image extension as image
 $bot->answer('image', 'image:https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=350&h=150')
