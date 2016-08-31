@@ -31,3 +31,17 @@ $lat = $bot->getLocation('lat');
 
 $long = $bot->getLocation('long');
 ```
+
+### Saving People Location
+
+### Quick Save
+
+To saving people location, just use `$bot->storage->set()` method in the storage driver:
+
+```
+$bot->answer('location:', function ($bot, $user_id) {
+	$location = $bot->getLocation();
+
+	$bot->storage->set($user_id, 'location', $location);
+});
+```
