@@ -34,8 +34,6 @@ $long = $bot->getLocation('long');
 
 ### Saving People Location
 
-### Quick Save
-
 To saving people location, just use `$bot->storage->set()` method in the storage driver:
 
 ```
