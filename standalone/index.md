@@ -5,7 +5,7 @@
 	- [Message Types](/docs/standalone/message-types)
 	- [Events & Nodes](/docs/standalone/events)
     - [Auto Stop](/docs/standalone/auto-stop)
-- API
+- Basics
 	- [API Basic](/docs/standalone/api)
 	- [Shortcodes](/docs/standalone/shortcodes)
     - [Text Matching](/docs/standalone/text-matching)
@@ -13,3 +13,8 @@
 	- [Intended Actions](/docs/standalone/intended-actions)
 	- [Quick Replies](/docs/standalone/quick-replies)
 	- [Thread Settings](/docs/standalone/thread-settings)
+	- [Handle Attachments](/docs/standalone/attachments)
+- Storage
+    - [Storage Basic](/docs/standalone/storage)
+    - [Storage Drivers](/docs/standalone/drivers)
+    - [MySQL Setup](/docs/standalone/mysql)

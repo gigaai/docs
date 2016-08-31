@@ -1,6 +1,7 @@
 # Custom Callback
 - [Custom Callback](#custom-callback)
-	- [Retrieve People Sent Message](#retrieve-people-sent-message)
+- [Callback Arguments](#callback-arguments)
+- [$bot->say()](#bot-say)
 	
 ---
 Giga also brings a fluent way to handle postback by using custom callback, this make the plugin becomes the ultimate weapon for you, for real.
@@ -12,31 +13,29 @@ Instead of only using supported [Message Types](message-types). You can also use
 ```
 // When people clicked BuyNowButton. We handle it here
 
-$bot->answer('payload:BUY_NOW_BUTTON', function ($bot) 
+$bot->answer('payload:GET_WEATHER', function ($bot, $user_id) 
 {
 	// Free to do your jobs here. These lines below are pseudo code
-	global $db;
-	$db->checkCurrentUserAccount()->createTransaction()->update();
+	$user_location  = $bot->storage->get($user_id, 'location');
+	$weather        = \Weather::ofLocation($user_location)->get();
 	
 	// Response user via $bot->say(); instead of $bot->answer();
-	$bot->say('We have processed your action!');
+	$bot->say("Your weather today is {$weather}");
 });
 ``` 
-Please note that `$bot` argument in callback function is not required.
 
-Also, note that we use `$bot->say()` instead of `$bot->answer()` in callback function. This method has same signature as `$bot->answer()` but doesn't take first argument (*action*) because we don't need to redefine action there. 
+<a name="callback-arguments"></a>
+## Callback Arguments
 
-<a name="retrieve-people-sent-message"></a>
-### Retrieve People Sent Message
-Sometimes, you'll want to retrieve user sent message as a variable to process your business. You can use `$bot->received_text`, please note that it will receive both your own message and people message. This example will show how to get only people sent message:
+In the above example, you can see we've used `$bot` and `$user_id` arguments. There're totally 3 arguments: `$bot`, `$user_id`, and `$input`. All of them are optional.
 
-```
-$bot->answer('@email', function ($bot)
-{
-	// This is how we get user entered text. You should set your page id in config.php
-	if ($bot->sender_id != $bot->config->get('page_id'))
-		$received_text = $bot->received_text;
+`$bot` is `GigaAI\MessengerBot` instance
 
-	$bot->say("You've just entered ". $received_text);
-});
-```
+`$user_id` is current user id
+
+`$input` is user sent message
+
+<a name="bot-say"></a>
+## $bot->say()
+
+In the end of custom callback, we'll need to send message to current user. Because `$bot->answer()` is used to answer incoming message, not to send message to user. So we'll use `$bot->say()` method. This method has same signature as `$bot->answer()` but doesn't take first argument (*action*) because we don't need to redefine action there. 

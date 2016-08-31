@@ -46,14 +46,9 @@ Advanced example, wait until email is correct:
 $bot->answer('I want to check my flight status', 'Please give me your email')
 	->wait('email');
 
-$bot->answer('@email', function ($bot) {
-
-   // Get user entered text. You have to enter page id in config.php
-   if ($bot->sender_id != $bot->config->get('page_id'))
-      $received_text = $bot->received_text;
+$bot->answer('@email', function ($bot, $user_id, $input) {
    
-  	if ( ! filter_var($received_text, FILTER_VALIDATE_EMAIL))
-	{
+  	if ( ! filter_var($input, FILTER_VALIDATE_EMAIL)) {
 		$bot->say('Your email is not valid! Please enter again')
 			->wait('email');
 

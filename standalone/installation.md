@@ -17,7 +17,7 @@
 ### Server Requirements
 In order to run Giga Messenger Bot (GigaAI), your server should meet these minimum requirements:
 
-- PHP 5.3+
+- PHP 5.3.2+
 - `cURL` should enabled
 - Your site (or webhook) should `https`
 
@@ -33,7 +33,7 @@ Of course, it's highly recommended that you run latest stable PHP version.
 - Your webhook now is the path to `/public/` URL. For example: `https://domain.com/giga-messenger-bot/public/`.
 
 > Of course, you can rename `giga-messenger-bot` to whatever you want. Or point your domain to `/public/` URL for security purpose. All is well.
-
+````````
 <a name="secure-tunnels-to-localhost"></a>
 ### Secure Tunnels to Localhost
-Let's assume that you want to test your bots in your development machine before deploying. You'll need to let Facebook connect to your PC and it should have SSL enabled. To simply these steps, we'd recommend that you use [ngrok](https://ngrok.com), it will automatically creates a secure public URL to your local webserver with format: `https://RANDOM.ngrok.io`.
+Let's assume that you want to test your bots in your development environment before deploying. You'll need to let Facebook connect to your PC and it should have SSL enabled. To simply these steps, we'd recommend that you use [ngrok](https://ngrok.com), it will automatically create a secure public URL to your local webserver with format: `https://RANDOM.ngrok.io`.
