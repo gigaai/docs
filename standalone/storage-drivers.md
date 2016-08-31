@@ -2,11 +2,13 @@
 ---
 By default, for simply your application, Giga AI stores your leads in `cache/data.json` file, this is good for small or testing environment application. For large application, we'd recommended you use `mysql` or `wordpress` storage driver.
 
-**Different between `mysql` and `wordpress`**
-Both `mysql` and `wordpress` are support mysql. But `mysql` uses [illuminate/database](https://github.com/illuminate/database) package to works with MySQL, whilst `wordpress` use native WordPress `$wpdb` object. So there are some pros and cons:
+## Different between `mysql` and `wordpress`
 
-`mysql`: requires PHP 5.4+ and running `composer update` but more powerful, works with any application. Don't worry, composer is easy to use.
-`wordpress`: You can run it without configuration, but only works with WordPress.
+Both `mysql` and `wordpress` are support MySQL. But `mysql` uses [illuminate/database](https://github.com/illuminate/database) package to works with MySQL, whilst `wordpress` use native WordPress `$wpdb` object. So there are some pros and cons:
+
+**mysql**: requires PHP 5.4+ and running `composer update` but more powerful, works with any application. Don't worry, composer is easy to use.
+
+**wordpress**: You can run it without configuration, but only works with WordPress.
 
 You can use `mysql` storage driver for all app including WordPress but cannot use `wordpress` for any app.
 
@@ -18,14 +20,20 @@ Because MySQLStorageDriver uses `illuminate/database` and it requires PHP 5.4+, 
 ```
 "illuminate/database": "5.0.*"
 ```
-
-2. Then update packages
+So your `composer.json` should become like so:
+```
+    {
+        "require": {
+            "gigaai/framework": "dev-master",
+            "illuminate/database": "5.0.*"
+        }
+    }
+```
+1. Then update packages
 ```
 composer update
 ```
-
-3. Open `config.php`, change `storage_driver` to `mysql`
-
-In `mysql` section, enter your database connection info.
-
-4. Import `vendor/gigaai/schema/mysql.sql` to your database, this will setup db tables for you. If you want to set table prefix, please edit that file manually before importing.
+1. Open `config.php`
+    - Change `storage_driver` to `mysql`
+    - In `mysql` section, enter your database connection info.
+1. Import `vendor/gigaai/schema/mysql.sql` to your database, this will setup db tables for you. If you want to set table prefix, please edit that file manually before importing.

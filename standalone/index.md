@@ -16,5 +16,6 @@
 	- [Handle Attachments](/docs/standalone/attachments)
 - Storage
     - [Storage Basic](/docs/standalone/storage)
-    - [Storage Drivers](/docs/standalone/drivers)
-    - [MySQL Setup](/docs/standalone/mysql)
+    - [Storage Drivers](/docs/standalone/storage-drivers)
+- Misc
+    - [Changelogs](/docs/standalone/changelogs)
