@@ -34,7 +34,7 @@ The next step is make a connection between Website <=> App <=> Page, so all mess
 - Open `giga-messenger-bot/config.php` and paste that copied text to `page_access_token` section.
 - *(Optional)* Copy your page ID, paste it to `page_id` section.
 
-Now, visit your subscribe URL (default is `https://domain.com/giga-messenger-bot/public/subscribe.php`). You should see this message:
+Now, visit your subscribe URL (default is `https://domain.com/giga-messenger-bot/public/?subscribe`). You should see this message:
 
 ```
 stdClass Object
