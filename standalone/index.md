@@ -1,5 +1,6 @@
 - Getting Started
 	- [Installation](/docs/standalone/installation)
+	- [Upgrade Guide](/docs/standalone/upgrade)
 	- [Setup Messenger](/docs/standalone/setup-messenger)
 - Core Concepts
 	- [Message Types](/docs/standalone/message-types)

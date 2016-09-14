@@ -38,7 +38,7 @@ $bot->answer('attachment:location', function ($bot) {
 });
 ```
 
-## Getting People Location
+### Getting People Location
 
 In the above example, we've used custom callback with `$bot->getLocation()` method, this method returns an object of Coordinate with `lat` and `long` properties.
 
@@ -59,5 +59,23 @@ $bot->answer('location:', function ($bot, $user_id) {
 	$location = $bot->getLocation();
 
 	$bot->storage->set($user_id, 'location', json_encode($location));
+});
+```
+
+### Location and Intended Actions
+
+It's great to combine Location and Intended Actions, this example show you how to get people location to ship your pizza:
+
+```
+$bot->answer('order pizza', 'Please send us your location')->wait('location');
+
+$bot->answer('@location', function ($bot, $user_id) {
+    
+    $location = $bot->getLocation();
+    
+    // Store it for future use
+    $bot->storage->set($user_id, 'location', json_encode($location));
+    
+    $bot->say('Thanks for ordering. We are processing your order and will ship to you shortly');
 });
 ```

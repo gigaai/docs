@@ -8,10 +8,10 @@
 - Dashboard
 	- [Bot Designer](/docs/wordpress/bot-designer)
 - API
+	- [Dynamic Data](/docs/wordpress/dynamic-data)
 	- [API Basic](/docs/wordpress/api)
 	- [Text Matching](/docs/wordpress/text-matching)
 	- [Shortcodes](/docs/wordpress/shortcodes)
-	- [Dynamic Data](/docs/wordpress/dynamic-data)
 	- [Custom Callback](/docs/wordpress/custom-callback)
 	- [Intended Actions](/docs/wordpress/intended-actions)
 	- [Quick Replies](/docs/wordpress/quick-replies)

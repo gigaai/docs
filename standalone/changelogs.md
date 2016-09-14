@@ -1,5 +1,11 @@
 # Changelogs
 ---
+## Version 1.1.1 (September 14th, 2016)
+- Improvement: `MySQLStorageDriver` is shipped with the package by default
+- Improvement: Attachment now works with Intended Actions
+- Improvement: Remove `$bot->run();` method on `public/index.php`
+- Fix: `Driver Not Found` exception in strict mode
+
 ## Version 1.1 (August 30th, 2016)
 - New: Add Attachment Handler
 - New: Add MySQLStorageDriver and WordPressStorageDriver

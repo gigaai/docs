@@ -39,7 +39,7 @@ In the previous step, you've knew that in order to sending a message, we'll use 
 Another example:
 ```
 // My bot loves Spanish and it say hola! when people say hello
-$bot->answer( 'hello', 'hola!' );
+$bot->answer('hello', 'hola!');
 ```
 
 <a name="sending-media"></a>

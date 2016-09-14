@@ -12,28 +12,32 @@ Both `mysql` and `wordpress` are support MySQL. But `mysql` uses [illuminate/dat
 
 You can use `mysql` storage driver for all app including WordPress but cannot use `wordpress` for any app.
 
-## Installing MySQL Storage Driver
+## Using MySQL Storage Driver
 
-Because MySQLStorageDriver uses `illuminate/database` and it requires PHP 5.4+, before you installing `mysql` driver. Please make sure your server is running PHP 5.4+
-
-1. Go to your project root in the same directory with `composer.json`, and add this package:
-```
-"illuminate/database": "5.0.*"
-```
-So your `composer.json` should become like so:
-```
-    {
-        "require": {
-            "gigaai/framework": "dev-master",
-            "illuminate/database": "5.0.*"
-        }
-    }
-```
-1. Then update packages
-```
-composer update
-```
 1. Open `config.php`
     - Change `storage_driver` to `mysql`
     - In `mysql` section, enter your database connection info.
+
 1. Import `vendor/gigaai/schema/mysql.sql` to your database, this will setup db tables for you. If you want to set table prefix, please edit that file manually before importing.
+
+### Database Queries
+
+All drivers have same methods, see [Storage Basic](/docs/standalone/storage) for more detail. Since `MySQLStorageDriver` use `illumunate/database` package. It has even more methods. To make a database query, use `$bot->storage->db()` method. It will returns Laravel `\DB` instance: 
+
+For example:
+
+```
+$bot->answers('check my license', 'Please enter your license key')->wait('key');
+
+$bot->answer('@key', function ($bot, $user_id, $input) {
+    
+    $user_exists = $bot->storage->db()->table('users')->where('license_key', $input)->exists();
+    
+    if ($user_exists)
+        $bot->say('Your license is valid');
+    else
+        $bot->say('Your license is invalid');
+});
+```
+
+For `illuminate/database` usage, please check it on [Laravel Documentation](https://laravel.com/docs/5.0/queries)
