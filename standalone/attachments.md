@@ -34,7 +34,7 @@ $bot->answer('attachment:location', function ($bot) {
 
     $long = $location->long;
     
-    $bot->say('Your latitude is ' . $lat);
+    return 'Your latitude is ' . $lat;
 });
 ```
 
@@ -76,6 +76,6 @@ $bot->answer('@location', function ($bot, $user_id) {
     // Store it for future use
     $bot->storage->set($user_id, 'location', json_encode($location));
     
-    $bot->say('Thanks for ordering. We are processing your order and will ship to you shortly');
+    return 'Thanks for ordering. We are processing your order and will ship to you shortly';
 });
 ```

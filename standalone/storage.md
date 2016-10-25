@@ -2,9 +2,6 @@
 ---
 Saving leads information and bot configurations to the database is the most common task - must have feature, and [Giga AI](/) supports it without any hassle. Let's jump in to see the awesomeness.
 
-## Storage Driver
-By default, Giga uses `file` storage driver as you can see in `config.php`, that means leads are store in flat-file and bot configurations are saving in PHP array. Giga also supports `mysql` and `wordpress` drivers. Please check [Storage Driver](/docs/standalone/storage-drivers) for configuration.
-
 ## Getting Leads Data
 By default, when people sent you first message, their basic [information](/docs/standalone/shortcodes) are automatically saved. To get lead info, you can use `$bot->storage->get($user_id);` method. For example:
 
@@ -14,7 +11,7 @@ $bot->answer('hi', function ($bot, $user_id) {
 	
 	$first_name = $user['first_name'];
 
-	$bot->say('Hey ' . $first_name);
+	return 'Hey ' . $first_name;
 });
 ```
 
@@ -43,7 +40,7 @@ To saving people data, use `$bot->storage->set($lead)` method. While `$lead` is 
 
 ```
 $bot->storage->set([
-	'lead_id' 		=> '123456',
+	'lead_id' 		=> '1197994363555408',
 	'first_name' 	=> 'Daryl',
 	'last_name' 	=> 'Dixon',
 	'email'			=> 'daryl@dixon.com'
@@ -55,7 +52,7 @@ Please note that `lead_id` key is required.
 **Other way**
 There is another way to do it, you can set the first parameter is lead_id and second parameter is array of fields:
 ```
-$bot->storage->set('123456', [
+$bot->storage->set('1197994363555408', [
 	'first_name' 	=> 'Daryl',
 	'last_name' 	=> 'Dixon',
 	'email'			=> 'daryl@dixon.com'
@@ -67,7 +64,7 @@ $bot->storage->set('123456', [
 ### Single Field
 To update specified field, you can set the first parameter is the lead id, second parameter is the field name and third parameter is field value:
 ```
-$bot->storage->set('123456', 'email', 'daryn@dixon.com');
+$bot->storage->set('1197994363555408', 'email', 'daryn@dixon.com');
 ```
 
 ## Deleting Lead

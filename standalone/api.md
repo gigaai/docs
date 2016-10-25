@@ -1,5 +1,5 @@
 # Giga API
-- [Start Point](#start-point)
+- [Getting Started](#start-point)
 - [Sending Message](#sending-message)
 - [Sending Media](#sending-media)
     - [Image](#image)
@@ -9,6 +9,8 @@
 - [Sending Structured Message](#sending-structured-message)
     - [Button](#button)
     - [Generic](#generic)
+    - [Call Button](#call-button)
+    - [Share Button](#share-button)
     - [Receipt](#receipt)
 - [Handling Click Event](#handling-click-event)
 - [Multiple Responses per Event](#multiple-responses)
@@ -20,21 +22,24 @@
 > It's time to teach your bot now. In this section, you'll learn how to teach her with powerful Giga API.
 
 <a name="start-point"></a>
-## Start Point
-In the [Setup Messenger](/docs/standalone/setup-messenger) section, you see that when we say `hi`, bot says `Hi [first_name]!`, how can she do it?
+## Getting Started
+In the [Setup Messenger](/docs/standalone/setup-messenger) section, you see that when we say `hi`, bot says `Hi [first_name]!`, how can bot do it?
 
-Start opening `/giga-messenger-bot/public/index.php`, you'll see this row:
+Start opening `/giga-messenger-bot/public/seeder.php`, you'll see this line:
 
 ```
 $bot->answer('hi', 'Hi [first_name]!');
 ```
 
-Now, try to change both parameter and experience it yourself.
+Now, try to change both parameter, go to `https://domain.com/giga-messenger-bot/public/seeder.php` again and experience it yourself.
+
+> Each time you make a change. You should make a request to your `seeder.php` to invoke `$bot->answer()` method. Of course, you can rename that file if you want. 
+Please don't use `$bot->answer()` in `index.php` cause it will make an infinite loop.
 
 <a name="sending-message"></a>
 ## Sending Message
 
-In the previous step, you've knew that in order to sending a message, we'll use `$bot->answer();` method.
+In the previous step, you've knew that in order to response a message, we'll have to create a node by using `$bot->answer()` method.
 
 Another example:
 ```
@@ -191,6 +196,49 @@ $bot->answer('Show me your new product', [
 ]);
 ```
 **Bubbles is limited to 10**
+<a name="call-button"></a>
+### Call Button
+Call Button is a quick way to make a phone call. It can be used with the Button or Generic Templates.
+![Call Button](https://scontent-hkg3-1.xx.fbcdn.net/t39.2365-6/14174889_175312432876430_128371202_n.png)
+
+To create Call Button, just set type to `phone_number` and payload to the target phone number. For example:
+
+```
+...
+'buttons' => [
+    [
+        'type'      => 'phone_number',
+        'title'     => 'Call Saul Goodman',
+        'payload'   => '+123456789'
+    ]
+]
+...
+```
+
+<a name="share-button"></a>
+### Share Button
+Share Button enables people to share message bubbles with their contacts using a native share dialog in Messenger.
+![Share Button](https://scontent-hkg3-1.xx.fbcdn.net/t39.2365-6/14235587_623632261149104_420720127_n.png)
+Messages that are shared display the page name and profile pic, indicating the origin of the message. 
+This attribution can be tapped, enabling friends to start their own conversations from shared content.
+![Share Bubble](https://scontent-hkg3-1.xx.fbcdn.net/t39.2365-6/14130007_1097233913704658_67138787_n.png)
+
+Notes: 
+- Only individual message bubbles can be shared.
+- If your message bubble has a URL Button using Messenger Extensions, Postback, Buy Button, the behavior of those buttons will change such that tapping on them will start a new thread with your bot. Share, URL (without Messenger Extensions) and Phone number buttons will behave normally.
+
+The Share Button only works with the Generic Template. In the Send API, set the button type to `element_share`. This will generate a Share Button with title set as "Share".
+
+```
+...
+'buttons' => [
+    [
+        'type' => 'element_share'
+    ]            
+]
+...
+```
+
 <a name="receipt"></a>
 ### Receipt
 

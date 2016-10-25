@@ -1,5 +1,14 @@
 # Upgrade Guide
 ---
+## Upgrading to 2.0 from 1.x
+V2 has big changes in code base and data. Before upgrading step. Please make sure to backup your database and code.
+
+- Delete whole old directory and replace with your new downloaded V2
+- Go to your `/config.php` and enter your configuration values again.
+- Open `/vendor/gigaai/framework/schema/1.x-to-2.0.sql` and import to your database if you have already have database before, otherwise, import `mysql.sql`.
+- Copy all `$bot->answer()` method in your old `index.php` to `/public/seeder.php`, below `$bot = require ...` line. Now, each time you make changes, run that file.
+- Make sure you still can connect to your Facebook App by going to `https://domain.com/public/?subscribe=true`
+- That's all.
 
 ## Upgrading to 1.1.1 from 1.1
 

@@ -1,9 +1,9 @@
 # Custom Callback
 - [Custom Callback](#custom-callback)
 - [Callback Arguments](#callback-arguments)
-- [$bot->say()](#bot-say)
 	
 ---
+In the [Dynamic Data](dynamic-data) guide. We've used callback to avoid caching feature. 
 Giga also brings a fluent way to handle postback by using custom callback, this make the plugin becomes the ultimate weapon for you, for real.
 
 <a name="custom-callback"></a>
@@ -13,29 +13,24 @@ Instead of only using supported [Message Types](message-types). You can also use
 ```
 // When people clicked BuyNowButton. We handle it here
 
-$bot->answer('payload:GET_WEATHER', function ($bot, $user_id) 
+$bot->answer('payload:GET_WEATHER', function ($bot, $lead_id) 
 {
 	// Free to do your jobs here. These lines below are pseudo code
-	$user_location  = $bot->storage->get($user_id, 'location');
+	$user_location  = $bot->storage->get($lead_id, 'location');
 	$weather        = \Weather::ofLocation($user_location)->get();
 	
-	// Response user via $bot->say(); instead of $bot->answer();
-	$bot->say("Your weather today is {$weather}");
+	// Response user via return
+	return "Your weather today is {$weather}";
 });
 ``` 
 
 <a name="callback-arguments"></a>
 ## Callback Arguments
 
-In the above example, you can see we've used `$bot` and `$user_id` arguments. There're totally 3 arguments: `$bot`, `$user_id`, and `$input`. All of them are optional.
+In the above example, you can see we've used `$bot` and `$lead_id` arguments. There're totally 3 arguments: `$bot`, `$lead_id`, and `$input`. All of them are optional.
 
-`$bot` is `GigaAI\MessengerBot` instance
+`$bot` is the `GigaAI\MessengerBot` instance
 
-`$user_id` is current user id
+`$lead_id` is the current user id
 
-`$input` is user sent message
-
-<a name="bot-say"></a>
-## $bot->say()
-
-In the end of custom callback, we'll need to send message to current user. Because `$bot->answer()` is used to answer incoming message, not to send message to user. So we'll use `$bot->say()` method. This method has same signature as `$bot->answer()` but doesn't take first argument (*action*) because we don't need to redefine action there. 
+`$input` is the user sent message

@@ -1,5 +1,17 @@
 # Changelogs
 ---
+## Version 2.0
+- New: Subscription feature
+- New: Fluent intended action
+- Improvement: Performance now 5X faster
+- Improvement: Split index.php to index.php, seeder.php, subscription.php
+- Improvement: Quick Replies can works with multiple messages
+- Improvement: User can use either $bot->say() or return statement in callback
+- Fix: Cannot handle quick replies payload
+- Change: Add more tables and fields to database
+- Change: Remove File Storage Driver
+- Change: Remove WP Storage Driver
+
 ## Version 1.1.1 (September 14th, 2016)
 - Improvement: `MySQLStorageDriver` is shipped with the package by default
 - Improvement: Attachment now works with Intended Actions

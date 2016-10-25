@@ -5,18 +5,19 @@
 - Core Concepts
 	- [Message Types](/docs/standalone/message-types)
 	- [Events & Nodes](/docs/standalone/events)
-    - [Auto Stop](/docs/standalone/auto-stop)
 - Basics
 	- [API Basic](/docs/standalone/api)
 	- [Shortcodes](/docs/standalone/shortcodes)
+	- [Dynamic Data](/docs/standalone/dynamic-data)
     - [Text Matching](/docs/standalone/text-matching)
 	- [Custom Callback](/docs/standalone/custom-callback)
 	- [Intended Actions](/docs/standalone/intended-actions)
 	- [Quick Replies](/docs/standalone/quick-replies)
 	- [Thread Settings](/docs/standalone/thread-settings)
 	- [Handle Attachments](/docs/standalone/attachments)
+- Subscriptions
+	- [Subscription](/docs/standalone/subscriptions)
 - Storage
     - [Storage Basic](/docs/standalone/storage)
-    - [Storage Drivers](/docs/standalone/storage-drivers)
 - Misc
     - [Changelogs](/docs/standalone/changelogs)

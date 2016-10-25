@@ -81,7 +81,7 @@ Parameter Name | Description | Type | Required?
 `payload` | For postback buttons, this data will be sent back to you via webhook. Limit 1000 characters | String | Y, if type is `postback`
 
 ### Handling Postback Event
-Simply handle it like normal buttons.
+Simply handle it like normal postback using `$bot->answer('payload:...')` method.
 
 ### Deleting Persistent Menu
 - Open `/giga-messenger-bot/config.php`, then remove `persistent_menu` section or simply set its value to empty string.
