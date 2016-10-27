@@ -122,8 +122,10 @@ In the above example, we've sent message to channel `1`, to send to multiple cha
 **Sending a Message to Subscribers in either `lawyer` or `frankfurt` Channels**
 
 ```
-'to_channel' => 'lawyer, frankfurt'
+'to_channel' => 'nantes, frankfurt'
 ```
+
+This is helpful when you want to send message to all leads which live in either `nantes` or `frankfurt`
 
 **Sending a Message to Subscribers in both `lawyer` and `frankfurt` Channels**
 
