@@ -32,7 +32,7 @@ Of course, it's highly recommended that you run latest stable PHP version.
 - Your webhook now is the path to `/public/` URL. For example: `https://domain.com/giga-messenger-bot/public/`.
 
 #### Setup Your Database
-- Create your MySQL database (or use existing one if alreay have)
+- Create your MySQL database (or use existing one if already have)
 - Open `/vendor/gigaai/framework/schema/mysql.sql` and import to your database
 - Open `/config.php`, in mysql section. Enter your database connection info then save file.
 

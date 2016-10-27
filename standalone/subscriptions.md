@@ -13,7 +13,7 @@ $bot->answer('subscribe', function ($bot, $lead_id) {
 });
 ```
 
-### Add a subscriber to default channel
+### To Default Channel
 
 To add a subscriber to channel, just set the lead id to the first argument, and the channel name to second argument of `addSubscribers()` method. By default, channel name is `1`
 
@@ -21,42 +21,44 @@ To add a subscriber to channel, just set the lead id to the first argument, and 
 $bot->subscription->addSubscribers('1197994363555408');
 ```
 
-### Add a subscriber to named channel
+### To Named Channel
 
 Of course, you're free to name your channels
 
 ```
-$bot->subscription->addSubscribers('1197994363555408', 'job');
+$bot->subscription->addSubscribers('1197994363555408', 'news');
 ```
 
-### Add subscriber to multiple channels
+### One To Many
+
+You can add a subscriber to many channels, use comma separated or array syntax:
 
 ```
-$bot->subscription->addSubscribers('1197994363555408', 'job,frankfurt');
+$bot->subscription->addSubscribers('1197994363555408', 'news,frankfurt');
 ```
 
 Same as
 
 ```
-$bot->subscription->addSubscribers('1197994363555408', ['job','frankfurt']);
+$bot->subscription->addSubscribers('1197994363555408', ['news','frankfurt']);
 ```
 
-### Many subscribers to many channels
+### Many To Many
 
-Just set an array of subscribers in the first argument and the array of channels in the second arguments
+To set many subscribers subscribe channels, set the array for both arguments:
 
 ```
-$bot->subscription->addSubscribers(['1197994363555408', '1065693993499150'], ['job','frankfurt']);
+$bot->subscription->addSubscribers(['1197994363555408', '1065693993499150'], ['news','frankfurt']);
 ```
 
-### Many subscribers to different channels
+### Many Subscribers with Different Channels
 
 To add many subscribers to different channels, just set a key => value pairs of subscriber and channels:
 
 ```
 $bot->subscription->addSubscribers([
-    '1197994363555408' => 'job, nantes', 
-    '1065693993499150' => 'job, frankfurt'
+    '1197994363555408' => 'lawyer, nantes', 
+    '1065693993499150' => 'lawyer, frankfurt'
 ]);
 ```
 
@@ -115,18 +117,20 @@ You can remove `->send()` method or all code after message sent.
 
 #### Grouping Channels
 
-In the above example, we've sent message to channel `1`, to send to multiple channels, you can set comma separated values of channels, for example `'lawyer, frankfurt'`. In order to send to all subscribers which subscribe both `lawyer` and `frankfurt` channels, we'll use array syntax. For example
+In the above example, we've sent message to channel `1`, to send to multiple channels, you can set comma separated values of channels, for example `'lawyer, frankfurt'`. 
 
 **Sending a Message to Subscribers in either `lawyer` or `frankfurt` Channels**
 
 ```
-'to_channel' => 'lawyer, sport'
+'to_channel' => 'lawyer, frankfurt'
 ```
 
 **Sending a Message to Subscribers in both `lawyer` and `frankfurt` Channels**
+
+In order to send to all subscribers which subscribe both `lawyer` and `frankfurt` channels, we'll use array syntax. For example
 
 ```
 'to_channel' => ['lawyer', 'frankfurt']
 ```
 
-This is helpful when you create a job board website, and want to send to all users who live in `frankfurt` and look for a `lawyer` job.
+This is helpful when you create a job board website, and want to send messages to all users who live in `frankfurt` and look for a `lawyer` job.
