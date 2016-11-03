@@ -2,6 +2,7 @@
 ---
 > Configure the Thread Settings on Messenger to improve the user-experience of your integration. These settings apply to each page individually.
 
+![Giga AI Thread Settings](https://giga.ai/images/thread-settings.png)
 
 ## Greeting Text
 You can set a greeting for new conversations. This can be used to communicate your bot's functionality.

@@ -5,10 +5,9 @@
 
 
 ## Start Using Bot Builder
-To start using Bot Builder, go to **Dashboard \ Giga AI \ Bot Builder**
+To start using Bot Builder, go to **Dashboard \ Giga AI \ Bot Builder**. You'll see a sleek Visual Builder with Live Preview.
 
-
-
+![Giga Messenger Bot Builder](https://giga.ai/images/bot-builder.png)
 
 ## Response to People Actions
 
@@ -19,6 +18,3 @@ To response to each people action, we can create a node with related action. Thi
     - If you select `Click`, you'll see a dropdown which allows you select what button which people click to response.
     
 - In `Response with` drop down, select a [message type](message-types) to response. Note that `Receipt` is not available for Bot Designer since it requires dynamic data.
-
-Example Result
-![Defining a Bot](https://facebookmessengerbots.com/images/bot-content-1.jpg)

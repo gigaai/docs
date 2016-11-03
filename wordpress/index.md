@@ -9,12 +9,12 @@
 - Visual
 	- [Bot Builder](/docs/wordpress/bot-builder)
 	- [Thread Settings](/docs/wordpress/thread-settings)
+    - [Text Matching](/docs/wordpress/text-matching)
+    - [Shortcodes](/docs/wordpress/shortcodes)
 	- [Dynamic Shortcodes](/docs/wordpress/dynamic-shortcodes)
 - API
 	- [Dynamic Data](/docs/wordpress/dynamic-data)
 	- [API Basic](/docs/wordpress/api)
-	- [Text Matching](/docs/wordpress/text-matching)
-	- [Shortcodes](/docs/wordpress/shortcodes)
 	- [Custom Callback](/docs/wordpress/custom-callback)
 	- [Intended Actions](/docs/wordpress/intended-actions)
 	- [Quick Replies](/docs/wordpress/quick-replies)
