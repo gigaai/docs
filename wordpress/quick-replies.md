@@ -6,7 +6,7 @@ Quick Replies provide a new way to present buttons to the user. Quick Replies ap
 
 ## Adding Quick Replies
 
-> If you're using Builder, just click </kbd>+ Quick Replies</kbd> button under each response add a Quick Replies. If you use Dynamic Data. This is a guide to add Quick Replies to your Response.
+> If you're using Builder, just click `+ Quick Replies` button under each response add a Quick Replies. If you use Dynamic Data. This is a guide to add Quick Replies to your Response.
 
 Quick Replies work with all message types. To add quick replies, put them and your message together in an array. For example:
 

@@ -6,9 +6,10 @@
     - [Leads & Subscribers](/docs/wordpress/leads-and-subscribers)
 	- [Message Types](/docs/wordpress/message-types)
 	- [Events & Nodes](/docs/wordpress/events)
-- Dashboard
+- Visual
 	- [Bot Builder](/docs/wordpress/bot-builder)
 	- [Thread Settings](/docs/wordpress/thread-settings)
+	- [Dynamic Shortcodes](/docs/wordpress/dynamic-shortcodes)
 - API
 	- [Dynamic Data](/docs/wordpress/dynamic-data)
 	- [API Basic](/docs/wordpress/api)

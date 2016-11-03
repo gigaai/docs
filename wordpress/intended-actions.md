@@ -1,4 +1,7 @@
 # Intended Actions
+- [Named Intended Actions](#wait-syntax)
+- [Fluent Intended Actions](#fluent-syntax)
+
 ---
 One of most powerful features of Giga is *Intended Actions*. This helps you mark next message of people as a Variable, make the conversation between Bot and People more native and collect users information. This will make your bot become a Lead Generator, friendlier than traditional Forms.
 
@@ -20,6 +23,9 @@ Bot:
 - Hi John, the flight will arrive at today, 20:00
 ```
 
+<a name="wait-syntax"></a>
+## Named Intended Actions
+
 As you can see, after people sent **john@doe.com** Bot knows that's an answer for **Please give me your email** question. To do so, we'll chain `wait($action)` method after `$bot->answer()`.
 
 For example:
@@ -36,7 +42,7 @@ $bot->answer('@email', function ($bot) {
 	// Process your business here
 	
 	// Then response user
-	$bot->say('The flight will arrive at today, 20:00');
+	return 'The flight will arrive at today, 20:00';
 });
 ```
 
@@ -46,13 +52,9 @@ Advanced example, wait until email is correct:
 $bot->answer('I want to check my flight status', 'Please give me your email')
 	->wait('email');
 
-$bot->answer('@email', function ($bot) {
-
-   // Get user entered text. You have to enter page id in config.php
-   if ($bot->sender_id != $bot->config->get('page_id'))
-      $received_text = $bot->received_text;
+$bot->answer('@email', function ($bot, $lead_id, $input) {
    
-  	if ( ! filter_var($received_text, FILTER_VALIDATE_EMAIL)) {
+  	if ( ! filter_var($input, FILTER_VALIDATE_EMAIL)) {
 		$bot->say('Your email is not valid! Please enter again')
 			->wait('email');
 
@@ -60,5 +62,42 @@ $bot->answer('@email', function ($bot) {
 	}
 
 	$bot->say('The flight will arrive at today, 20:00');
+});
+```
+
+> In the above example, we use `$bot->say()` method which same as `return` but can chain `->wait()`.
+
+<a name="fluent-syntax"></a>
+## Fluent Intended Actions
+
+Instead of `wait()` syntax, we can chain nodes together by using fluent `then()` syntax. This makes your code shorter, prettier. The above example can be rewrite like so:
+
+```
+$bot->answer('I want to check my flight status', 'Please give me your email')->then(function ($bot, $lead_id, $input) {
+
+	if ( ! filter_var($input, FILTER_VALIDATE_EMAIL)) {
+		$bot->keep('Your email is not valid! Please enter again');
+		return;
+	}
+
+	return 'The flight will arrive at today, 20:00';
+});
+```
+
+We've just used a new method `$bot->keep()`, this is used to keep printing a message until the `if` condition is correct.
+
+Of course, you can chain `then()` many times you want. For example:
+
+```
+$bot->answer('register', 'Please enter your email')->then(function ($bot, $lead_id, $input) {
+
+	...
+	
+	return 'Please enter your password';
+})->then(function ($bot, $lead_id, $input) {
+	
+	...
+
+	return 'Thanks for registering';
 });
 ```
