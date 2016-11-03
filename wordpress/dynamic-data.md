@@ -20,4 +20,6 @@ add_action('giga_pre_seed', function ($bot) {
 });
 ```
 
+Now, open **Bot Builder** and you'll see new Node has been added.
+
 If you understand these above lines, that's awesome. Otherwise, don't be panic. Let's continue reading API documentation.

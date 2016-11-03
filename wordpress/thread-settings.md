@@ -12,7 +12,7 @@ You can set a greeting for new conversations. This can be used to communicate yo
 
 To set your Messsenger Greeting text, the easiest way is go to the 'Messaging' tab in your Page settings.
 
-You can also configure Greeting text by go to `Giga AI\Settings`, set your Greeting Text under `Greeting Text` section and go to `https://domain.com/messenger/?giga_action=updateGreetingText`
+You can also configure Greeting text by changing text under **Dashboard \ Giga AI \ Settings \ Thread Settings \ Greeting Text** box.
 
 ## Get Started Button
 When the Get Started button is tapped, you can send a text message or a Structured Message, containing images and buttons.
@@ -25,18 +25,26 @@ The image below shows how the Get Started button can be used to introduce your b
 
 ### Creating Get Started Button: 
 
-Just go to `https://domain.com/messenger/?giga_action=updateGetStartedButton`
+Get Started button is created by default as `GIGA_GET_STARTED_PAYLOAD`. You don't have to do anything.
 
 ### Handling Get Started Button:
-Simply answer the GIGA_GET_STARTED_PAYLOAD postback event, like so:
-
-```
-$bot->answer('payload:GIGA_GET_STARTED_PAYLOAD', 'Hi [first_name]!, welcome to our page');
-```
+Simply create a node to response the `GIGA_GET_STARTED_PAYLOAD` event. By using Bot Builder or Giga API.
 
 ### Removing Get Started Button:
-- Go to `Giga AI\Settings`, then set `Get Started Button Payload` section to empty.
-- Open `https://domain.com/messenger/?giga_action=updateGetStartedButton`
+Simple delete the whole text box value.
 
 ## Persistent Menu
-Documentation for persistent menu will be available soon.
+
+The Persistent Menu is a menu that is always available to the user. This menu should contain top-level actions that users can enact at any point. Having a persistent menu easily communicates the basic capabilities of your bot for first-time and returning users.
+The menu can be invoked by a user, by tapping on the 3-caret icon on the left of the composer.
+
+![Persistent Menu](https://scontent-hkg3-1.xx.fbcdn.net/t39.2365-6/13509228_581512925362726_878211705_n.png)
+
+### Creating Persistent Menu
+
+Persistent Menu is created for you by default. You can start editing Persistent Menu right under
+**Dashboard \ Giga AI \ Settings \ Thread Settings \ Persistent Menu** section.
+
+### Delete Persistent Menu
+
+Persistent Menu is great, we're not recommended to delete it. But if you want. Simply delete all menu items.

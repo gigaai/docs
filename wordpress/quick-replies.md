@@ -5,6 +5,9 @@ Quick Replies provide a new way to present buttons to the user. Quick Replies ap
 ![Quick Replies](https://scontent-hkg3-1.xx.fbcdn.net/t39.2365-6/13509243_818831098218750_489238139_n.png)
 
 ## Adding Quick Replies
+
+> If you're using Builder, just click </kbd>+ Quick Replies</kbd> button under each response add a Quick Replies. If you use Dynamic Data. This is a guide to add Quick Replies to your Response.
+
 Quick Replies work with all message types. To add quick replies, put them and your message together in an array. For example:
 
 ```
@@ -37,6 +40,8 @@ $bot->answer('I wanna buy a dress', [
 `payload` is payload postback to the webhook
 
 ## Handling Quick Replies
+> If you're using Builder. You can create another Node to handle Quick Reply payload or text. This is a guide for people prefer Dynamic Data.
+
 There're two ways to handle Quick Replies. You can handle quick reply as normal text message or payload.
 
 ### As Normal Text

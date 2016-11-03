@@ -8,6 +8,7 @@
 	- [Events & Nodes](/docs/wordpress/events)
 - Dashboard
 	- [Bot Builder](/docs/wordpress/bot-builder)
+	- [Thread Settings](/docs/wordpress/thread-settings)
 - API
 	- [Dynamic Data](/docs/wordpress/dynamic-data)
 	- [API Basic](/docs/wordpress/api)
@@ -16,7 +17,6 @@
 	- [Custom Callback](/docs/wordpress/custom-callback)
 	- [Intended Actions](/docs/wordpress/intended-actions)
 	- [Quick Replies](/docs/wordpress/quick-replies)
-	- [Thread Settings](/docs/wordpress/thread-settings)
 - Cookbook
 - Misc
     - [Changelogs](/docs/wordpress/changelogs)

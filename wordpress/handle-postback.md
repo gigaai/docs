@@ -17,10 +17,8 @@ $bot->answer('payload:BUY_NOW_BUTTON', function ( $bot ) {
 
 	// Free to do your jobs here
 
-	$bot->say('We have processed your action!');
+	return 'We have processed your action!';
 });
 ``` 
 
 Please note that `$bot` argument in callback function is not required.
-
-Also, note that we use `$bot->say()` instead of `$bot->answer()` in callback function. This method has same signature as `$bot->answer()` but doesn't take first argument (*action*) because we don't need to redefine action there. 
