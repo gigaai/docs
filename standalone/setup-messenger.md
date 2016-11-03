@@ -30,8 +30,8 @@ The next step is make a connection between Website <=> App <=> Page, so all mess
 
 - In your Facebook App. Navigate Messenger, below Webhooks item.
 - In `Token Generation` section, select a your page, you'll need to confirm permission for that page. After that step, you'll got Page Access Token.
-	![Page Access Token](/images/page-access-token.png)
 - In Webhooks box, scroll down to Select a page to subscribe your webhook to the page events. Choose your page and click "Subscribe".
+![Page Access Token](/images/token-generation.gif)
 - Open `giga-messenger-bot/config.php` and paste that copied text to `page_access_token` section.
 - *(Optional)* Copy your page ID, paste it to `page_id` section.
 

@@ -1,12 +1,13 @@
 - Getting Started
 	- [Installation](/docs/wordpress/installation)
+	- [Upgrade Guide](/docs/wordpress/upgrade)
 	- [Setup Messenger](/docs/wordpress/setup-messenger)
 - Core Concepts
+    - [Leads & Subscribers](/docs/wordpress/leads-and-subscribers)
 	- [Message Types](/docs/wordpress/message-types)
 	- [Events & Nodes](/docs/wordpress/events)
-    - [Auto Stop](/docs/wordpress/auto-stop)
 - Dashboard
-	- [Bot Designer](/docs/wordpress/bot-designer)
+	- [Bot Builder](/docs/wordpress/bot-builder)
 - API
 	- [Dynamic Data](/docs/wordpress/dynamic-data)
 	- [API Basic](/docs/wordpress/api)
@@ -16,3 +17,6 @@
 	- [Intended Actions](/docs/wordpress/intended-actions)
 	- [Quick Replies](/docs/wordpress/quick-replies)
 	- [Thread Settings](/docs/wordpress/thread-settings)
+- Cookbook
+- Misc
+    - [Changelogs](/docs/wordpress/changelogs)

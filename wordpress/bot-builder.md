@@ -1,14 +1,17 @@
-# Bot Designer
+# Bot Builder
 ***
 
-> Bot Designer brings a convenience way for you to create Nodes for response to people action. By using point-and-click interface, you don't have to have coding knowledge to create a messenger bot.
+> Bot Buider brings a convenience way for you to create Nodes for response to leads action. By using point-and-click interface, you don't have to be a geek to create an awesome bot.
 
-![Designing a Bot](https://facebookmessengerbots.com/images/bot-settings.jpg)
 
-## Start Using Bot Designer
-To start using Bot Designer, go to Giga AI\Designer menu in your *wp-admin*
+## Start Using Bot Builder
+To start using Bot Builder, go to **Dashboard \ Giga AI \ Bot Builder**
+
+
+
 
 ## Response to People Actions
+
 To response to each people action, we can create a node with related action. This part show you how to do it with Bot Designer.
 
 - In `When` drop down, select an action.

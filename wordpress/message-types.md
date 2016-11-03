@@ -1,6 +1,6 @@
 # Message Types
 ---
-Giga is supports sending all types of messages which Messenger provided. You can send **Text**, **Images**, **Audio**, **Videos**, **Files**, or **Structured Messages** which have several templates.
+Giga supports sending almost types of messages which Messenger provided. You can send **Text**, **Images**, **Audio**, **Videos**, **Files**, or **Structured Messages** which have several templates.
 
 ## Message Types
 
