@@ -7,7 +7,7 @@ Since 2.0, Giga AI added new feature which let you show the generic template (ca
 - In the **Bot answer with** dropdown, select **Dynamic Shortcode**
 - A Text box will show up allows you place the shortcode
 
-## Usage
+## Syntax
 Basically, the shortcode usage is:
 
 ```
@@ -23,6 +23,16 @@ It will displays `6` bubbles of latest posts in whole site, which contains
  
 ### Binding Bubble Field
 
-Instead of showing `post_title`, `excerpt`, `post_thumbnail`, you can tell Giga to display other field of post.
+Instead of showing `post_title`, `excerpt`, `post_thumbnail`, you can tell Giga to display other fields of post. Just link the bubble parameter with both parameter, like so:
 
-...
+```
+[post-generic title="post_title" subtitle="price" thumbnail="product_image"] 
+
+```
+
+In the above example, we link the title of bubble with the `post_title` field of post, we also link the subtitle of bubble and thumbnail of bubble with other post fields. If cannot found, it will look at meta key of `wp_postmeta` table.
+
+### Adding Buttons
+By default, we have a `web_url` button with View title.
+
+....

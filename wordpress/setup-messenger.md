@@ -18,7 +18,7 @@ In your Facebook App. Navigate to Webhooks menu item, click New Subscription, th
 	
 ![New Page Subscription](/images/new-page-submission.gif)
 
-- In "Callback URL", enter your webhook URL (default is `https://domain.com/giga-messenger-bot/public/`).
+- In "Callback URL", enter your webhook URL (default is `https://domain.com/wp-json/giga-ai/webhook`).
 - In "Verify Token", enter `GigaAI`
 - In "Subscription Field", check all fields with prefix "message_", like `message_deliveries`, `messages`, `messaging_optins`, `messaging_postbacks`, `message_echoes`, `message_reads`, and `messaging_account_linking`.
 - Click <kbd>Verify and Save</kbd>

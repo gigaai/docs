@@ -17,4 +17,4 @@ To response to each people action, we can create a node with related action. Thi
     - If you select `Text`, you'll see a Content text box. Which allows you define what message content to response.
     - If you select `Click`, you'll see a dropdown which allows you select what button which people click to response.
     
-- In `Response with` drop down, select a [message type](message-types) to response. Note that `Receipt` is not available for Bot Designer since it requires dynamic data.
+- In `Bot answer with` drop down, select a [message type](message-types) to response. Note that `Receipt` is not available for Bot Designer since it requires dynamic data.

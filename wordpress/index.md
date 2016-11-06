@@ -12,6 +12,8 @@
     - [Text Matching](/docs/wordpress/text-matching)
     - [Shortcodes](/docs/wordpress/shortcodes)
 	- [Dynamic Shortcodes](/docs/wordpress/dynamic-shortcodes)
+- Marketing Tools
+    - [CRM](/docs/wordpress/crm)
 - API
 	- [Dynamic Data](/docs/wordpress/dynamic-data)
 	- [API Basic](/docs/wordpress/api)
