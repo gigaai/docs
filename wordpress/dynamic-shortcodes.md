@@ -37,9 +37,9 @@ By default, the bubble title matches with your post title. In most case, you don
 ### Set Bubble Subtitle
 Like title, by default, the bubble subtitle matches with your excerpt. You can also set the subtitle by using same syntax with title `subtitle="field_name"`, while field name is the post field or post meta field. For example:
 
-**Bind a custom field named `price` to bubble subtitle**
+**Set bubble subtitle as WooCommerce `_regular_price`**
 ```
-[post-generic subtitle="price"]
+[post-generic subtitle="_regular_price"]
 ```
 
 ### Set Bubble Image
@@ -69,7 +69,7 @@ By default, the Generic Carousel will displays up to `6` Bubbles. You can change
 [post-generic limit="3"]
 ```
 
-### Category Parameter
+### Category Parameters
 In order to display product in specified category, we have more than 1 option for you. Just like `WP_Query` API.
  
 **Display posts that have this category (and any children of that category), using category id:**
@@ -84,8 +84,8 @@ In order to display product in specified category, we have more than 1 option fo
 
 **If you need to set complex categories, go to [Query Array](#query-array) section**
 
-### Tag Property
-Like Category property, we have tag property for you
+### Tag Parameters
+Like Category parameters, we have tag parameters for you
 - `tag="tag_slugs"`
 - `tag_id="tag_id"`
 
@@ -114,7 +114,14 @@ Display posts that have "all" of these tags:
 [post-generic tag="bread+baking+recipe"]
 ```
 
-### Order Property
+### Post Type Parameters
+Post Type parameter lets you select the post to be display. For example WooCommerce Product:
+```
+[post-generic post_type="product"]
+```
+
+
+### Order Parameters
 ...
 
 ### Query Array
