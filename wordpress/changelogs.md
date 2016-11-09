@@ -1,5 +1,8 @@
 # Changelogs
 ---
+## Version 2.0.1 - November, 7th, 2016
+- Fix: Error when collation isn't UTF-8
+
 ## Version 2.0 - November, 3rd, 2016.
 - New: CRM Module. Seamless way to works with your Leads.
 - New: Dynamic Shortcode. Helps you integrate with your posts easily.

@@ -86,7 +86,7 @@ $bot->answer('send me your file', 'http://www.pdf995.com/samples/pdf.pdf');
 <a name="force-detection"></a>
 ### Force Detection
 
-Sometimes, you'll want to send Image, Audio, or Video as File. And sometimes, your URL doesn't include file extension, so you'll want to tell the bot which exactly media type to send to user. Just prepend your extension before your URL. For example:
+Sometimes, you'll want to send Image, Audio, or Video as File. And sometimes, your URL doesn't contains file extension, so you'll want to tell the bot which exactly media type to send to user. Just prepend your extension before your URL. For example:
 
 ```
 // Send Image as File

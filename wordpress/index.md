@@ -1,7 +1,7 @@
 - Getting Started
 	- [Installation](/docs/wordpress/installation)
-	- [Upgrade Guide](/docs/wordpress/upgrade)
 	- [Setup Messenger](/docs/wordpress/setup-messenger)
+	- [Upgrade Guide](/docs/wordpress/upgrade)
 - Core Concepts
     - [Leads & Subscribers](/docs/wordpress/leads-and-subscribers)
 	- [Message Types](/docs/wordpress/message-types)
