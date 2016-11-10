@@ -1,6 +1,18 @@
 # Changelogs
 ---
-## Version 2.0
+## Version 2.0.2 (November 10th, 2016)
+- Improvement: Better UTF-8 support 
+- Improvement: Add default seeder for GIGA_GET_STARTED_PAYLOAD
+- Fix: Quick Replies doesn't works inside closure
+- Change: Use MySQL REGEX or LIKE syntax for Text Matching
+- Under the hood: Move Messenger Bot answer(), answers(), say(), says(), wait(), then() methods to LearnTrait.
+
+## Version 2.0.1 (October 28th, 2016)
+- Fix: Quick Replies and Default answers doesn't works
+- Improvement: URL should be URL instead of force to File
+- Change: Default channel in example file is 1 instead of 2.
+
+## Version 2.0 (October 25th, 2016)
 - New: Subscription feature
 - New: Fluent intended action
 - Improvement: Performance now 5X faster
