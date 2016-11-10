@@ -1,7 +1,7 @@
 - Getting Started
 	- [Installation](/docs/standalone/installation)
-	- [Upgrade Guide](/docs/standalone/upgrade)
 	- [Setup Messenger](/docs/standalone/setup-messenger)
+	- [Upgrade Guide](/docs/standalone/upgrade)
 - Core Concepts
 	- [Message Types](/docs/standalone/message-types)
 	- [Events & Nodes](/docs/standalone/events)
