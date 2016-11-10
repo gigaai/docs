@@ -16,7 +16,7 @@ Create a new [Facebook App](https://developers.facebook.com/quickstarts/?platfor
 
 In your Facebook App. Navigate to Webhooks menu item, click New Subscription, then choose Page. A dialog will shows up:
 	
-![New Page Subscription](/images/new-page-submission.gif)
+![New Page Subscription](/images/standalone-page-submission.gif)
 
 - In "Callback URL", enter your webhook URL (default is `https://domain.com/giga-messenger-bot/public/`).
 - In "Verify Token", enter `GigaAI`
