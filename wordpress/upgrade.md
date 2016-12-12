@@ -1,5 +1,10 @@
 # Upgrade Guide
 ---
+## Upgrading to 2.1 from 2.0.x
+- Make sure you've backed up your database before update any plugin.
+- Replace whole old `giga-messenger-bots` folder with new downloaded folder.
+- That's all.
+
 ## Upgrading to 2.0 from 1.x
 
 > We do not directly support upgrade to 2.0 from 1.x. You have to backup your database, copy your nodes to another locations and manual enter again. 

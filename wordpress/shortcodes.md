@@ -1,4 +1,4 @@
-# Shortcodes
+# Profile Shortcodes
 ---
 
 When you open Bot Buider, you'll see we use `Hi [first_name]!` message, this will response *Hi Gustavo!* if lead's name is *Gustavo*. This feature called *Shortcode*
