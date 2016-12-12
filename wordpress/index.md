@@ -10,8 +10,11 @@
 	- [Bot Builder](/docs/wordpress/bot-builder)
 	- [Thread Settings](/docs/wordpress/thread-settings)
     - [Text Matching](/docs/wordpress/text-matching)
-    - [Shortcodes](/docs/wordpress/shortcodes)
-	- [Dynamic Shortcodes](/docs/wordpress/dynamic-shortcodes)
+    - [Account Linking](/docs/wordpress/account-linking)
+- Shortcodes
+    - [Profile](/docs/wordpress/shortcodes)
+    - [Generic](/docs/wordpress/dynamic-shortcodes)
+    - [Random Text](/docs/wordpress/random-text)
 - Marketing Tools
     - [CRM](/docs/wordpress/crm)
 - API
