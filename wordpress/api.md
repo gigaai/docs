@@ -1,17 +1,21 @@
 # Giga API
-- [Sending Message](#sending-message)
+- [Sending Text Message](#sending-message)
 - [Sending Media](#sending-media)
     - [Image](#image)
     - [Audio and Video](#audio-and-video)
     - [File](#file)
     - [Force Detection](#force-detection)
-- [Sending Structured Message](#sending-structured-message)
-    - [Button](#button)
+- [Templates](#templates)
+    - [Button Group](#button-group)
     - [Generic](#generic)
+    - [List](#list)
+    - [Receipt](#receipt)
+- [Buttons](#buttons)
     - [Call Button](#call-button)
     - [Share Button](#share-button)
-    - [Receipt](#receipt)
-- [Handling Click Event](#handling-click-event)
+    - [Login Button](#login-button)
+    - [Logout Button](#logout-button)
+- [Handling Payload](#handling-payload)
 - [Multiple Responses per Event](#multiple-responses)
 - [Multiple Nodes](#multiple-nodes)
 - [Default Answer](#default-answer)
@@ -22,7 +26,7 @@
 
 
 <a name="sending-message"></a>
-## Sending Message
+## Sending Text Message
 
 In the previous guide, you've knew that in order to response a message, we'll have to create a node by using `$bot->answer()` method.
 
@@ -81,15 +85,14 @@ $bot->answer('send me your image as file', 'file:http://www.gstatic.com/webp/gal
 $bot->answer('image', 'image:https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97150&w=350&h=150')
 ```
 
-<a name="sending-structured-message"></a>
-## Sending Structured Message
+<a name="templates"></a>
+## Template
 
-<a name="button"></a>
-### Button
+<a name="button-group"></a>
+### Button Group
+Button Group contains text with a set of button (maximum is 3). 
 
-Do you remember [Message Types](message-types), it's time to quick look about it. We have to remember attributes to pass to button message.
-
-To send buttons to people. Just pass its attributes to an array:
+To send Button Group to people, just pass its attributes to an array:
 
 ```
 // Answer `Who are you?` question with a button
@@ -112,7 +115,7 @@ $bot->answer('Who are you?', [
 ]);
 ```
 
-**Please note that you can send up to 3 buttons per group**
+In the above example, we've used [web_url](#web-url-button) and [postback](#postback-button) buttons. These buttons is not only can be used in Button Group but also can be used in other template message types.
 
 <a name="generic"></a>
 ### Generic
@@ -181,47 +184,191 @@ $bot->answer('Show me your new product', [
 ]);
 ```
 **Bubbles is limited to 10**
-<a name="call-button"></a>
-### Call Button
-Call Button is a quick way to make a phone call. It can be used with the Button or Generic Templates.
-![Call Button](https://scontent-hkg3-1.xx.fbcdn.net/t39.2365-6/14174889_175312432876430_128371202_n.png)
 
-To create Call Button, just set type to `phone_number` and payload to the target phone number. For example:
+<a name="list"></a>
+### List
+The List Template is a template that allows you to present a set of items vertically. It can be rendered in two different ways.
 
+The first way renders the first item with a cover image with text overlaid. This is good to making the first item appear prominently above the other items.
+
+![List Template](https://scontent.fhan2-1.fna.fbcdn.net/t39.2365-6/14858155_1136082199802015_362293724211838976_n.png)
+
+The second way renders each item identically and is useful for presenting a list of items where no item is shown prominently.
+
+![List Template Compact](https://scontent.fhan2-1.fna.fbcdn.net/t39.2365-6/14850002_611227872394847_984878022932824064_n.png)
+
+Each item may render a button which can be used as a call-to-action. You can also provide a URL to be opened when an item is tapped.
+
+Each list template message can also have up to 1 global button which will be rendered below the item list.
+
+**Usage**
+The list template can be sent with a call to the Send API with a new template_type list.
+
+The first item style is controlled by a new field called `top_element_style`. The value can be `large` or `compact`. To send a list view as a plain list (with no cover item), set the `top_element_style` to compact; otherwise, the first element will be rendered as the cover item and the `image_url` is required for the first element.
+
+Each element also supports a `default_action`. Using this, you can enable people to open a URL when the row of the list item is tapped.
+
+Please take note of the following limitations:
+
+1. You may send at least 2 elements and at most 4 elements.
+1. Adding a button to each element is optional. You may only have up to 1 button per element.
+1. You may have up to 1 global button.
+
+**Example**
+
+A List with Cover:
 ```
-...
-'buttons' => [
+'elements' =>  [
     [
-        'type'      => 'phone_number',
-        'title'     => 'Call Saul Goodman',
-        'payload'   => '+123456789'
+        'title' =>  'Classic T-Shirt Collection',
+        'image_url' =>  'https://peterssendreceiveapp.ngrok.io/img/collection.png',
+        'subtitle' =>  'See all our colors',
+        'default_action' =>  [
+            'type' =>  'web_url',
+            'url' =>  'https://peterssendreceiveapp.ngrok.io/shop_collection'
+        ],
+        'buttons' =>  [
+            [
+                'title' =>  'View',
+                'type' =>  'web_url',
+                'url' =>  'https://peterssendreceiveapp.ngrok.io/collection'
+            ]
+        ]
+    ],
+    [
+        'title' =>  'Classic White T-Shirt',
+        'image_url' =>  'https://peterssendreceiveapp.ngrok.io/img/white-t-shirt.png',
+        'subtitle' =>  '100% Cotton, 200% Comfortable',
+        'default_action' =>  [
+            'type' =>  'web_url',
+            'url' =>  'https://peterssendreceiveapp.ngrok.io/view?item=100',
+        ],
+        'buttons' =>  [
+            [
+                'title' =>  'Shop Now',
+                'type' =>  'web_url',
+                'url' =>  'https://peterssendreceiveapp.ngrok.io/shop?item=100'              
+            ]
+        ]
+    ],
+    [
+        'title' =>  'Classic Blue T-Shirt',
+        'image_url' =>  'https://peterssendreceiveapp.ngrok.io/img/blue-t-shirt.png',
+        'subtitle' =>  '100% Cotton, 200% Comfortable',
+        'default_action' =>  [
+            'type' =>  'web_url',
+            'url' =>  'https://peterssendreceiveapp.ngrok.io/view?item=101'
+        ],
+        'buttons' =>  [
+            [
+                'title' =>  'Shop Now',
+                'type' =>  'web_url',
+                'url' =>  'https://peterssendreceiveapp.ngrok.io/shop?item=101'                     
+            ]
+        ]                
+    ],
+    [
+        'title' =>  'Classic Black T-Shirt',
+        'image_url' =>  'https://peterssendreceiveapp.ngrok.io/img/black-t-shirt.png',
+        'subtitle' =>  '100% Cotton, 200% Comfortable',
+        'default_action' =>  [
+            'type' =>  'web_url',
+            'url' =>  'https://peterssendreceiveapp.ngrok.io/view?item=102'
+        ],
+        'buttons' =>  [
+            [
+                'title' =>  'Shop Now',
+                'type' =>  'web_url',
+                'url' =>  'https://peterssendreceiveapp.ngrok.io/shop?item=102'                   
+            ]
+        ]                
+    ]
+],
+'buttons' =>  [
+    [
+        'title' =>  'View More',
+        'type' =>  'postback',
+        'payload' =>  'payload'
     ]
 ]
-...
 ```
 
-<a name="share-button"></a>
-### Share Button
-Share Button enables people to share message bubbles with their contacts using a native share dialog in Messenger.
-![Share Button](https://scontent-hkg3-1.xx.fbcdn.net/t39.2365-6/14235587_623632261149104_420720127_n.png)
-Messages that are shared display the page name and profile pic, indicating the origin of the message. 
-This attribution can be tapped, enabling friends to start their own conversations from shared content.
-![Share Bubble](https://scontent-hkg3-1.xx.fbcdn.net/t39.2365-6/14130007_1097233913704658_67138787_n.png)
-
-Notes: 
-- Only individual message bubbles can be shared.
-- If your message bubble has a URL Button using Messenger Extensions, Postback, Buy Button, the behavior of those buttons will change such that tapping on them will start a new thread with your bot. Share, URL (without Messenger Extensions) and Phone number buttons will behave normally.
-
-The Share Button only works with the Generic Template. In the Send API, set the button type to `element_share`. This will generate a Share Button with title set as "Share".
-
+Without Cover:
 ```
-...
-'buttons' => [
+'top_element_style' => 'compact',
+'elements' =>  [
     [
-        'type' => 'element_share'
-    ]            
+        'title' =>  'Classic T-Shirt Collection',
+        'image_url' =>  'https://peterssendreceiveapp.ngrok.io/img/collection.png',
+        'subtitle' =>  'See all our colors',
+        'default_action' =>  [
+            'type' =>  'web_url',
+            'url' =>  'https://peterssendreceiveapp.ngrok.io/shop_collection'
+        ],
+        'buttons' =>  [
+            [
+                'title' =>  'View',
+                'type' =>  'web_url',
+                'url' =>  'https://peterssendreceiveapp.ngrok.io/collection'
+            ]
+        ]
+    ],
+    [
+        'title' =>  'Classic White T-Shirt',
+        'image_url' =>  'https://peterssendreceiveapp.ngrok.io/img/white-t-shirt.png',
+        'subtitle' =>  '100% Cotton, 200% Comfortable',
+        'default_action' =>  [
+            'type' =>  'web_url',
+            'url' =>  'https://peterssendreceiveapp.ngrok.io/view?item=100',
+        ],
+        'buttons' =>  [
+            [
+                'title' =>  'Shop Now',
+                'type' =>  'web_url',
+                'url' =>  'https://peterssendreceiveapp.ngrok.io/shop?item=100'              
+            ]
+        ]
+    ],
+    [
+        'title' =>  'Classic Blue T-Shirt',
+        'image_url' =>  'https://peterssendreceiveapp.ngrok.io/img/blue-t-shirt.png',
+        'subtitle' =>  '100% Cotton, 200% Comfortable',
+        'default_action' =>  [
+            'type' =>  'web_url',
+            'url' =>  'https://peterssendreceiveapp.ngrok.io/view?item=101'
+        ],
+        'buttons' =>  [
+            [
+                'title' =>  'Shop Now',
+                'type' =>  'web_url',
+                'url' =>  'https://peterssendreceiveapp.ngrok.io/shop?item=101'                     
+            ]
+        ]                
+    ],
+    [
+        'title' =>  'Classic Black T-Shirt',
+        'image_url' =>  'https://peterssendreceiveapp.ngrok.io/img/black-t-shirt.png',
+        'subtitle' =>  '100% Cotton, 200% Comfortable',
+        'default_action' =>  [
+            'type' =>  'web_url',
+            'url' =>  'https://peterssendreceiveapp.ngrok.io/view?item=102'
+        ],
+        'buttons' =>  [
+            [
+                'title' =>  'Shop Now',
+                'type' =>  'web_url',
+                'url' =>  'https://peterssendreceiveapp.ngrok.io/shop?item=102'                   
+            ]
+        ]                
+    ]
+],
+'buttons' =>  [
+    [
+        'title' =>  'View More',
+        'type' =>  'postback',
+        'payload' =>  'payload'
+    ]
 ]
-...
 ```
 
 <a name="receipt"></a>
@@ -282,11 +429,119 @@ $bot->answer('receipt', [
 ]);
 ```
 
-<a name="handling-click-event"></a>
-## Handling Click Event
-In above examples, we've only tried to response Text event, what about Click? 
+<a name="buttons"></a>
+### Buttons
+As above examples in Templates section, we've included buttons in Button Group, Generic, List, it works with [Persistent Menu](/docs/wordpress/thread-settings#persistent-menu) also.
 
-If user click on a `web_url` button, it will automatically redirect to that URL. Otherwise, to handle Click event on payload button. Just do the same as Text but append `payload:` before
+<a name="web-url-button"></a>
+### Web URL Button
+The Web URL button can be used to redirect leads to an URL, or open an URL in the in-app browser.
+
+To create URL button, set the button `type` to `web_url`, `url` to your URL and `title` for button title:
+```
+...
+'buttons' => [
+    [
+        'type' => 'web_url',
+        'url' => 'https://giga.ai',
+        'title' => 'Go to Giga AI'
+    ]
+]
+...
+```
+
+### Postback Button
+Sometimes, you'll want to let leads click on the button and response instead of redirect, in that case, we'll use Postback button.
+
+To create Postback button, set the button `type` to `postback`, `title` for button title, and `payload` to any payload name. We'll use payload name to handle. See [Handling Postback](#handling-postback) section for more detail:
+
+```
+'buttons' => [
+    [
+        'type' => 'postback',
+        'title' => 'Bookmark Item',
+        'payload' => 'DEVELOPER_DEFINED_PAYLOAD'
+    ]
+]
+```
+
+<a name="call-button"></a>
+### Call Button
+Call Button is a quick way to make a phone call. It can be used with the Button or Generic Templates.
+![Call Button](https://scontent-hkg3-1.xx.fbcdn.net/t39.2365-6/14174889_175312432876430_128371202_n.png)
+
+To create Call Button, just set type to `phone_number` and payload to the target phone number. For example:
+
+```
+...
+'buttons' => [
+    [
+        'type'      => 'phone_number',
+        'title'     => 'Call Saul Goodman',
+        'payload'   => '+123456789'
+    ]
+]
+...
+```
+
+<a name="share-button"></a>
+### Share Button
+Share Button enables people to share message bubbles with their contacts using a native share dialog in Messenger.
+![Share Button](https://scontent-hkg3-1.xx.fbcdn.net/t39.2365-6/14235587_623632261149104_420720127_n.png)
+Messages that are shared display the page name and profile pic, indicating the origin of the message. 
+This attribution can be tapped, enabling friends to start their own conversations from shared content.
+![Share Bubble](https://scontent-hkg3-1.xx.fbcdn.net/t39.2365-6/14130007_1097233913704658_67138787_n.png)
+
+Notes: 
+- Only individual message bubbles can be shared.
+- If your message bubble has a URL Button using Messenger Extensions, Postback, Buy Button, the behavior of those buttons will change such that tapping on them will start a new thread with your bot. Share, URL (without Messenger Extensions) and Phone number buttons will behave normally.
+
+The Share Button only works with the Generic Template. In the Send API, set the button type to `element_share`. This will generate a Share Button with title set as "Share".
+
+```
+...
+'buttons' => [
+    [
+        'type' => 'element_share'
+    ]            
+]
+...
+```
+
+<a name="login-button"></a>
+### Log In Button
+As the button name, when leads click on this button, it will open a window to let them login to your website. 
+
+To create Log In button, just the button `type` to `account_link` and `url` to your login URL. Please note that this button doesn't have the `title` property.
+
+```
+'buttons': [
+    [
+        'type': 'account_link',
+        'url': 'https://giga.ai/authorize'
+    ]
+]
+```
+
+<a name="logout-button"></a>
+### Log Out Button
+As the button name, when leads click on this button, it will logout your website.
+
+To create Log Out button, just the button `type` to `account_unlink`
+
+```
+'buttons': [
+    [
+        'type': 'account_unlink'
+    ]
+]
+```
+
+<a name="handling-postback"></a>
+## Handling Postback
+In above examples, we've only tried to response Text event, what about Postback? 
+
+If user click on a `web_url` button, it will automatically redirect to that URL. Otherwise, to handle Click/Tap event on payload button. Just do the same as Text but append `payload:` before
 
 ```
 // When user clicked Heisenberg button which has USER_CLICKED_HEISENBERG_BUTTON payload
