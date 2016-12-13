@@ -11,8 +11,8 @@
 Text
 : When leads send text to Giga.
 
-Payload
-: When leads tap on any previous button response. Included **Get Started** button, **Persistent Menu**, or **Quick Replies**..
+Postback
+: When leads tap on any payload button or Quick Replies.
 
 <a name="nodes"></a>
 ## Nodes
@@ -21,10 +21,10 @@ As mentioned above, **Node** is an event with a set of responses. So basically, 
 ```
 // This is a Node
 
-// Lead text
+// People text is an action
 People text: 'Do you like watching movie?'
 
-// Bot answers
+// Bot answers are responses
 Bot answers: 'Yes. The Walking Dead for sure.'
 Bot answers: 'And you?'
 ```

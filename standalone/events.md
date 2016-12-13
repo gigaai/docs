@@ -11,8 +11,8 @@
 Text
 : When leads send text to Giga.
 
-Payload
-: When leads tap on any previous button response. Included **Get Started** button, **Persistent Menu**, or **Quick Replies**..
+Postback
+: When leads tap on any payload button or Quick Replies.
 
 <a name="nodes"></a>
 ## Nodes
