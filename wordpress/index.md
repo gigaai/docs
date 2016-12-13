@@ -15,14 +15,16 @@
     - [Profile](/docs/wordpress/shortcodes)
     - [Generic](/docs/wordpress/shortcode-generic)
     - [Random Text](/docs/wordpress/shortcode-random-text)
-- Marketing Tools
-    - [CRM](/docs/wordpress/crm)
-- API
-	- [Dynamic Data](/docs/wordpress/dynamic-data)
+- API Reference
 	- [API Basic](/docs/wordpress/api)
+	- [Media](/docs/wordpress/media)
+	- [Templates](/docs/wordpress/templates)
+	- [Buttons](/docs/wordpress/buttons)
 	- [Custom Callback](/docs/wordpress/custom-callback)
 	- [Intended Actions](/docs/wordpress/intended-actions)
 	- [Quick Replies](/docs/wordpress/quick-replies)
+- Marketing Tools
+    - [CRM](/docs/wordpress/crm)
 - Cookbook
 - Misc
     - [Changelogs](/docs/wordpress/changelogs)

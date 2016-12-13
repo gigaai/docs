@@ -3,7 +3,7 @@
 Saving leads information and bot configurations to the database is the most common task - must have feature, and [Giga AI](https://giga.ai) supports it without any hassle. Let's jump in to see the awesomeness.
 
 ## Getting Leads Data
-By default, when people sent you first message, their basic [information](/docs/standalone/shortcodes) are automatically saved. To get lead info, you can use `$bot->storage->get($lead_id);` method. For example:
+By default, when people sent you first message, their basic [information](/docs/wordpress/shortcodes) are automatically saved. To get lead info, you can use `$bot->storage->get($lead_id);` method. For example:
 
 ```
 $bot->answer('hi', function ($bot, $lead_id) {

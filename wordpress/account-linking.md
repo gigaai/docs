@@ -5,7 +5,7 @@ Sometimes, you'll need to check that current lead is exists in your website to s
 ## Setup Account Linking
 The Account Linking feature is available in Premium edition and enabled by default. You don't have to do anything!
 
-## Change Account Linking URL
+## Changing Account Linking URL
 By default, account linking URL is your login form located at `/wp-login.php`, if you want to change account linking URL. Go to **Dashboard \ Giga AI \ Settings \ Account Linking** and change the URL.
 
 ## Sending Login Button
