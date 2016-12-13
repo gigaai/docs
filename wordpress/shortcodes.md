@@ -13,7 +13,3 @@ You can use shortcode for your bot content. Of course, just add that shortcode t
 - [gender]
 
 For example. If you change `Hi [first_name]!` to `Hi [first_name] [last_name]!`, Giga will response **Hi Gustavo Fring!** if lead's full name is **Gustavo Fring**
-
-## Dynamic Shortcodes Response
-
-Since 2.0, we've created new shortcode called `[post-generic]` which generates a posts carousel. Since WooCommerce Products are basically Posts. This feature works with WooCommerce also. See: [Dynamic Shortcodes](/docs/wordpress/dynamic-shortcodes)

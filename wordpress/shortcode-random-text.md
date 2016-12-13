@@ -2,11 +2,11 @@
 ---
 Your bot will looks dummy when it's only can say "Hi!" when greeting people. You'll want to pick a random text, like "Hello!", "Hola!", "Howdy!" so the bot will look smarter. To do so, you can either use our API, or just using a simple but powerful shortcode.
 
-## Adding Random Text Shortcode
+## Adding Dynamic Shortcode
+> This shortcode is one of our dynamic shortcodes. To add Dynamic shortcode, follow the steps below:
 - In your Node, click **+ Add Response**
 - In the **Bot answer with** dropdown, select **Dynamic Shortcode**
-- A Text box will show up allows you place the shortcode.
-- Now, enter `[random-text]` shortcode to that box. You'll learn the usage in the next section.
+- A Text box will show up allows you place the shortcode
 
 ## Usage
 To define a random text pool, add them between `[random-text]` and `[/random-text]`, keep each item in one line.

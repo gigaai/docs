@@ -1,13 +1,14 @@
-# Dynamic Shortcodes
+# Generic Shortcode
 ---
-Since 2.0, Giga AI added new feature which let you show the generic template (carousel) of Posts without touching to the code but still powerful. This works perfectly with WooCommerce Product also since Products are basically Posts.
+Since 2.0, Giga AI added new feature which let you fetch the posts and show generic templates (carousels) of Posts without touching to the code. This works perfectly with WooCommerce Product also since Products are basically Posts.
  
 ## Adding Dynamic Shortcode
+> This shortcode is one of our dynamic shortcodes. To add Dynamic shortcode, follow the steps below:
 - In your Node, click **+ Add Response**
 - In the **Bot answer with** dropdown, select **Dynamic Shortcode**
 - A Text box will show up allows you place the shortcode
 
-## Customize the Appearance
+## Usage
 Basically, the shortcode usage is:
 
 ```

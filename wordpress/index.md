@@ -4,17 +4,17 @@
 	- [Upgrade Guide](/docs/wordpress/upgrade)
 - Core Concepts
     - [Leads & Subscribers](/docs/wordpress/leads-and-subscribers)
-	- [Message Types](/docs/wordpress/message-types)
 	- [Events & Nodes](/docs/wordpress/events)
 - Visual
 	- [Bot Builder](/docs/wordpress/bot-builder)
 	- [Thread Settings](/docs/wordpress/thread-settings)
     - [Text Matching](/docs/wordpress/text-matching)
     - [Account Linking](/docs/wordpress/account-linking)
+    - [Auto Stop](/docs/wordpress/auto-stop)
 - Shortcodes
     - [Profile](/docs/wordpress/shortcodes)
-    - [Generic](/docs/wordpress/dynamic-shortcodes)
-    - [Random Text](/docs/wordpress/random-text)
+    - [Generic](/docs/wordpress/shortcode-generic)
+    - [Random Text](/docs/wordpress/shortcode-random-text)
 - Marketing Tools
     - [CRM](/docs/wordpress/crm)
 - API
