@@ -23,6 +23,7 @@
 	- [Custom Callback](/docs/wordpress/custom-callback)
 	- [Intended Actions](/docs/wordpress/intended-actions)
 	- [Quick Replies](/docs/wordpress/quick-replies)
+	- [Storage](/docs/wordpress/storage)
 - Marketing Tools
     - [CRM](/docs/wordpress/crm)
 - Cookbook
