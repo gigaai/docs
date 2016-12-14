@@ -24,6 +24,7 @@
 	- [Intended Actions](/docs/wordpress/intended-actions)
 	- [Quick Replies](/docs/wordpress/quick-replies)
 	- [Storage](/docs/wordpress/storage)
+	- [Subscription](/docs/wordpress/subscription)
 - Marketing Tools
     - [CRM](/docs/wordpress/crm)
 - Cookbook
