@@ -62,6 +62,15 @@ $bot->subscription->addSubscribers([
 ]);
 ```
 
+## Remove Leads from Channel
+
+In order to remove leads from channel use `$bot->subscription->removeSubscribers()` method. This method has similar signature with `$bot->subscription->addSubscribers()` method.
+
+For example:
+```
+$bot->subscription->removeSubscribers('1197994363555408', 'lawyer');
+```
+
 ## Creating Notification
 
 The main purpose Subscription feature is to sending push notification to leads. To do so, open your `/public/subscription.php` and start editing.
