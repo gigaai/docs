@@ -15,9 +15,9 @@
 
 <a name="server-requirements"></a>
 ### Server Requirements
-In order to run Giga Messenger Bot (GigaAI), your server should meet these minimum requirements:
-- PHP 5.4
-- MySQL 5.6
+In order to run Giga Messenger Bots (GigaAI), your server should meet these minimum requirements:
+- PHP >= 5.4
+- MySQL >= 5.6
 - `cURL` should enabled
 - Your site (or webhook) should `https`
 
@@ -29,12 +29,12 @@ Of course, it's highly recommended that you run latest stable PHP version.
 ### Installing Giga Messenger Bot
 - Download `giga-messenger-bot.zip` and unzip the package.
 - Copy `giga-messenger-bot` directory to your web server.
-- Your webhook now is the path to `/public/` URL. For example: `https://domain.com/giga-messenger-bot/public/`.
+- Your webhook now is the path to `/public/index.php` URL. For example: `https://domain.com/giga-messenger-bot/public/index.php`.
 
 #### Setup Your Database
 - Create your MySQL database (or use existing one if already have)
 - Open `/vendor/gigaai/framework/schema/mysql.sql` and import to your database
-- Open `/config.php`, in mysql section. Enter your database connection info then save file.
+- Open `/config.php`, in mysql section, enter your database connection info then save file.
 
 > Of course, you can rename `giga-messenger-bot` to whatever you want. Or point your domain to `/public/` URL for security purpose. All is well.
 

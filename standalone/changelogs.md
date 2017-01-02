@@ -1,5 +1,20 @@
 # Changelogs
 ---
+## Version 2.2 - Chiba (January 02nd, 2017)
+- New: Account Linking
+- New: List message type
+- New: Auto Stop (Mute) bot
+- New: Whitelisted domains
+- Improvement: Allows user remove subscribers from channels.
+- Improvement: Don't response message echo
+- Improvement: Better Message code structure
+- Improvement: Better button sanitizer
+- Improvement: When notification message limit is set to 0. You can send unlimited messages.
+- Improvement: Add soft delete for all db tables.
+- Improvement: Add creator_id field to some db tables
+- Improvement: You can set intended action for notification.
+- Fix: Storage::set() doesn't works with meta data
+
 ## Version 2.0.2 (November 10th, 2016)
 - Improvement: Better UTF-8 support 
 - Improvement: Add default seeder for GIGA_GET_STARTED_PAYLOAD

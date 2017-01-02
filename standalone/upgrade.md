@@ -1,5 +1,13 @@
 # Upgrade Guide
 ---
+## Upgrading to 2.2 from 2.0
+Version 2.1 is release for WordPress only, you'll upgrade directly from 2.0 to 2.2.
+
+- Replace whole project with new downloaded files.
+- Reconfigure by edit config.php again.
+- Import `/vendor/gigaai/schema/2.0-to-2.2.sql` to your database.
+
+
 ## Upgrading to 2.0 from 1.x
 V2 has big changes in code base and data. Before upgrading step. Please make sure to backup your database and code.
 

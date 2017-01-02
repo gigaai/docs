@@ -31,10 +31,10 @@ Start opening `/giga-messenger-bot/public/seeder.php`, you'll see this line:
 $bot->answer('hi', 'Hi [first_name]!');
 ```
 
-Now, try to change both parameter, go to `https://domain.com/giga-messenger-bot/public/seeder.php` again and experience it yourself.
+Now, try to change both parameters, go to `https://domain.com/giga-messenger-bot/public/seeder.php` again and experience it yourself.
 
 > Each time you make a change. You should make a request to your `seeder.php` to invoke `$bot->answer()` method. Of course, you can rename that file if you want. 
-Please don't use `$bot->answer()` in `index.php` cause it will make an infinite loop.
+Please don't use `$bot->answer()` in `index.php` because it will make an infinite loop.
 
 <a name="sending-message"></a>
 ## Sending Message
