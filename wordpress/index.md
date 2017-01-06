@@ -27,6 +27,7 @@
 	- [Subscription](/docs/wordpress/subscription)
 - Marketing Tools
     - [CRM](/docs/wordpress/crm)
+    - [Subscription & Notifications](/docs/wordpress/notifications)
 - Cookbook
 - Misc
     - [Changelogs](/docs/wordpress/changelogs)

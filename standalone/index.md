@@ -16,7 +16,7 @@
 	- [Thread Settings](/docs/standalone/thread-settings)
 	- [Handle Attachments](/docs/standalone/attachments)
 - Subscriptions
-	- [Subscription](/docs/standalone/subscriptions)
+	- [Subscription](/docs/standalone/subscription)
 - Storage
     - [Storage Basic](/docs/standalone/storage)
 - Misc

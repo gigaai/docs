@@ -1,5 +1,8 @@
 # Subscriptions
 ---
+
+> This documentation is for developer only. If you prefer click and point user interface, please go to [Subscription & Notifications](/docs/wordpress/notifications) guide.
+
 By default, when a lead have first interact with your bot. It automatically saves lead information to database also set their subscription channel to `1`.
 
 ## Adding Subscribers
@@ -60,6 +63,15 @@ $bot->subscription->addSubscribers([
     '1197994363555408' => 'lawyer, nantes', 
     '1065693993499150' => 'lawyer, frankfurt'
 ]);
+```
+
+## Remove Leads from Channel
+
+In order to remove leads from channel use `$bot->subscription->removeSubscribers()` method. This method has similar signature with `$bot->subscription->addSubscribers()` method.
+
+For example:
+```
+$bot->subscription->removeSubscribers('1197994363555408', 'lawyer');
 ```
 
 ## Creating Notification
