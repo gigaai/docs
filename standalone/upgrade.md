@@ -39,7 +39,7 @@ If your server is running PHP 5.3, you should consider upgrade to PHP 5.4+. If y
 ```
 - Run `composer update`
 
-## Upgrading to 1.0.x to 1.1
+## Upgrading to 1.1 from 1.0.x
 
 - Override whole project with new files, except `/public/index.php` and `config.php`
 - Remove `/public/subscribe.php`

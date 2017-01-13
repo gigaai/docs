@@ -1,5 +1,9 @@
 # Changelogs
 ---
+## Version 2.2.1 - January 14th, 2017
+- Improvement: Add jQuery maskedinput for datetime field.
+- Improvement: Don't load plugin assets on other pages.
+
 ## Version 2.2 (Chiba) - January 3rd, 2017
 - New: Subscription & Notification Builder.
 - New: Node Stream. You can update leads automatically via Bot Builder.

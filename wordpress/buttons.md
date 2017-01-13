@@ -91,10 +91,10 @@ As the button name, when leads click on this button, it will open a window to le
 To create Log In button, just the button `type` to `account_link` and `url` to your login URL. Please note that this button doesn't have the `title` property.
 
 ```
-'buttons': [
+'buttons' => [
     [
-        'type': 'account_link',
-        'url': 'https://giga.ai/authorize'
+        'type' => 'account_link',
+        'url' => 'https://giga.ai/authorize'
     ]
 ]
 ```
@@ -106,9 +106,9 @@ As the button name, when leads click on this button, it will logout your website
 To create Log Out button, just the button `type` to `account_unlink`
 
 ```
-'buttons': [
+'buttons' => [
     [
-        'type': 'account_unlink'
+        'type' => 'account_unlink'
     ]
 ]
 ```
