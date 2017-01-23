@@ -46,5 +46,3 @@ If you reached this step. Congratulation! All easy right? Now it's time to talk 
 Try to send hi to your page with your app's administrator account. If you get reply from your page. Congratulation! Otherwise, please check your server requirements or previous steps.
 
 ![Greeting](/images/greeting.jpg)
-
-> {note} This is a note

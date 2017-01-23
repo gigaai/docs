@@ -1,6 +1,6 @@
 # Generic Shortcode
 ---
-Since 2.0, Giga AI added new feature which let you fetch the posts and show generic templates (carousels) of Posts without touching to the code. This works perfectly with WooCommerce Product also since Products are basically Posts.
+Since 2.0, Giga AI added new feature which let you fetch the posts and show as generic templates (carousels) without write any line of code. This also allows you control any part of Generic template and works perfectly with WooCommerce Product since Products are basically Posts.
  
 ## Adding Dynamic Shortcode
 > This shortcode is one of our dynamic shortcodes. To add Dynamic shortcode, follow the steps below:
@@ -120,6 +120,21 @@ Post Type parameter lets you select the post to be display. For example WooComme
 ```
 [post-generic post_type="product"]
 ```
+
+### Tax Parameter
+We support `tax` parameter which more simple and flexible than `tax_query`, category paramters or tag parameters. This parameter is exclusive available in Giga Messenger Bots only. This helpful when you have custom taxonomy, for example, WooCommerce product category.
+
+**Display posts which has this taxonomy id. Can be any taxonomy type**
+```
+[post-generic tax="7"]
+```
+
+**Similar with slug**
+```
+[post-generic tax="sneakers"]
+```
+
+### WooCommerce Integration
 
 
 ### Order Parameters
