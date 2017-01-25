@@ -1,5 +1,8 @@
 # Changelogs
 ---
+## Version 2.2.2 - January 26th, 2017
+- New: You can use `tax` parameter in [post-generic] shortcode
+
 ## Version 2.2.1 - January 14th, 2017
 - Improvement: Add jQuery maskedinput for datetime field.
 - Improvement: Don't load plugin assets on other pages.
