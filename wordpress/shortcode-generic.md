@@ -134,19 +134,6 @@ We support `tax` parameter which more simple and flexible than `tax_query`, cate
 [post-generic tax="sneakers"]
 ```
 
-### WooCommerce Integration
-
 
 ### Order Parameters
 ...
-
-### Query Array
-These above query properties is using `key="value"` syntax. It's easy but has a limitation, it can't pass an array so you can't do something complex. In that case, we support `query_args` property which you can put exactly same property as you do with **WP_Query** class.
-
-Syntax:
-
-```
-[post-generic query_args="json"]
-```
-
-While JSON is your query args array which json encoded.
