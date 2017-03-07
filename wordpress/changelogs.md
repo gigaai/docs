@@ -1,5 +1,9 @@
 # Changelogs
 ---
+## Version 2.2.3 - March 08, 2017
+- Improvement: Better compatibility with some shared hosts.
+- Improvement: Update `gigaai/framework` to the latest version.
+
 ## Version 2.2.2 - January 26th, 2017
 - New: You can use `tax` parameter in [post-generic] shortcode
 
