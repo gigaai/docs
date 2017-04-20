@@ -29,7 +29,9 @@ Since V2, Giga AI interacts with MySQL REGEXP syntax. So you can choose either u
 For example:
 
 ```
-^(nice|good|great)(.*)man$
+(nice|good|great)(.*)man
 ```
 
 This example will matches with any sentence which begins with either `nice` or `good` or `great` then with any words then ends with `man`. Like: *nice man*, *good day man*, *great done man*
+
+*Note: You don't need to add `^` and `$` for start and stop the regex*

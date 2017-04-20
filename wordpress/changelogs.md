@@ -1,9 +1,26 @@
 # Changelogs
 ---
-## Version 2.2.3 - March 08, 2017
+## Version 2.3 (Brisbane) - April 22nd, 2017
+- New: Multiple Pages.
+- New: Replace Thread Settings with Messenger Profile.
+- New: Bot now can update lead based on their data via Builder.
+- New: Logger module.
+- New: `$bot->release()` method which lets you validate and forget intended actions. 
+- Improvement: Bot Builder responses can now draggable.
+- Improvement: Search and Filter in CRM.
+- Improvement: You can now use text matching and get `$input` variable for payload.
+- Improvement: $bot->answer(); now can takes 3 arguments, the third arguments is the node attributes.
+- Improvement: Fix all known CSS bugs and typo.
+- Improvement: Support using icon in quick replies.
+- Improvement: Use secured cookie as Session.
+
+## Version 2.2.4 - March 26th, 2017
+- Improvement: Remove tooltip() method
+- Fix: DB Migration doesn’t works with old MySQL version
+
+## Version 2.2.3 - March 08th, 2017
 - Improvement: Better compatibility with some shared hosts.
 - Improvement: Update `gigaai/framework` to the latest version.
-
 ## Version 2.2.2 - January 26th, 2017
 - New: You can use `tax` parameter in [post-generic] shortcode
 

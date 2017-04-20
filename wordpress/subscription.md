@@ -1,9 +1,9 @@
 # Subscriptions
 ---
 
-> This documentation is for developer only. If you prefer click and point user interface, please go to [Subscription & Notifications](/docs/wordpress/notifications) guide.
+> This documentation is for developer only. If you prefer drag and drop, please go to [Subscription & Notifications](/docs/wordpress/notifications) guide.
 
-By default, when a lead have first interact with your bot. It automatically saves lead information to database also set their subscription channel to `1`.
+By default, when leads interacted with your bot. It automatically saves their information to database also set their subscription channel to `1`.
 
 ## Adding Subscribers
 
