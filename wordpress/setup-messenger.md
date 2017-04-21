@@ -32,10 +32,9 @@ The next step is make a connection between Website <=> App <=> Page, so all mess
 - In `Token Generation` section, select a your page, you'll need to confirm permission for that page. After that step, you'll got Page Access Token.
 - In Webhooks box, scroll down to Select a page to subscribe your webhook to the page events. Choose your page and click "Subscribe".
 ![Page Access Token](/images/token-generation.gif)
+- Copy your page ID, paste it to **Page ID** section. This guide helps you [find the page ID](/tips/how-to-get-facebook-page-id).
 - Copy your page access token and paste it to **Dashboard / Giga AI / Settings / Page Access Token** section.
 ![WP Facebook Connection](/images/connect-wordpress-to-facebook.gif)
-- *(Optional)* Copy your page ID, paste it to `page_id` section.
-
 If success, you'll see the connection status in Basics section is green "success". Otherwise, check your steps or environment one more time.
 
 <a name="test-your-first-message"></a>
