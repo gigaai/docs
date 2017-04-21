@@ -10,7 +10,7 @@
 ## Create Facebook App & Page
 Create a new [Facebook App](https://developers.facebook.com/quickstarts/?platform=web) and [Page](https://www.facebook.com/pages/create) or simply use existing ones. Go to the App Dashboard and under Product Settings click "Add Product" and select "Messenger."
 
-![Setup Messenger](https://scontent-hkg3-1.xx.fbcdn.net/t39.2178-6/12995587_195576307494663_824949235_n.png)
+![Setup Messenger](/images/setup-messenger.png)
 <a name="setup-webhook"></a>
 ## Setup Webhook
 

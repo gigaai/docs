@@ -1,12 +1,20 @@
 # Quick Replies
 ---
-Quick Replies provide a new way to present buttons to the user. Quick Replies appear prominently above the composer, with they keyboard less prominent. When a button is tapped, the message is sent in the conversation with developer-defined metadata in the callback. After a button is tapped, the buttons are dismissed preventing the issue where users could tap on buttons attached to old messages in a conversation.
+Quick Replies provide a new way to present buttons to the user. 
 
-![Quick Replies](https://scontent-hkg3-1.xx.fbcdn.net/t39.2365-6/13509243_818831098218750_489238139_n.png)
+Quick Replies appear prominently above the composer, with they keyboard less prominent. 
+
+When a button is tapped, the message is sent in the conversation with developer-defined metadata in the callback. 
+
+After a button is tapped, the buttons are dismissed preventing the issue where users could tap on buttons attached to old messages in a conversation.
+
+Usage of Quick Replies
+![Quick Replies](/images/quick-replies.png)
+![Quick Replies with Location](/images/quick-replies-location.png)
 
 ## Adding Quick Replies
 
-> If you're using Builder, just click `+ Quick Replies` button under each response add a Quick Replies. If you use Dynamic Data. This is a guide to add Quick Replies to your Response.
+> If you're using Builder, just click `+ Quick Replies` button under your node add a Quick Replies. If you use Dynamic Data. This is a guide to add Quick Replies to your Response.
 
 Quick Replies work with all message types. To add quick replies, put them and your message together in an array. For example:
 
@@ -33,11 +41,13 @@ $bot->answer('I wanna buy a dress', [
 ]);
 ```
 
-`content_type` should be `text`
+`content_type`: `text` or `location`
 
-`title` is text to appear
+`title`: text to appear, only if `content_type` is `text`
 
-`payload` is payload postback to the webhook
+`payload`: payload postback to the webhook, only if `content_type` is `text`
+
+`image_url` The icon for the quick replies
 
 ## Handling Quick Replies
 > If you're using Builder. You can create another Node to handle Quick Reply payload or text. This is a guide for people prefer Dynamic Data.

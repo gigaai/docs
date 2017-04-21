@@ -1,0 +1,2 @@
+- Index
+	- [How to get Facebook Page ID](/tips/how-to-get-facebook-page-id)

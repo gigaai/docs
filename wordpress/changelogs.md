@@ -1,7 +1,7 @@
 # Changelogs
 ---
-## Version 2.3 (Brisbane) - April 22nd, 2017
-- New: Multiple Pages.
+## Version 2.3 (Frankfurt) - April 22nd, 2017
+- New: Multiple Pages (Premium).
 - New: Replace Thread Settings with Messenger Profile.
 - New: Bot now can update lead based on their data via Builder.
 - New: Logger module.
@@ -10,9 +10,9 @@
 - Improvement: Search and Filter in CRM.
 - Improvement: You can now use text matching and get `$input` variable for payload.
 - Improvement: $bot->answer(); now can takes 3 arguments, the third arguments is the node attributes.
-- Improvement: Fix all known CSS bugs and typo.
 - Improvement: Support using icon in quick replies.
-- Improvement: Use secured cookie as Session.
+- Fix: All known CSS bugs and typo.
+- Fix: Cannot save notification when `end_at` field is null.
 
 ## Version 2.2.4 - March 26th, 2017
 - Improvement: Remove tooltip() method

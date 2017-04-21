@@ -5,6 +5,7 @@
 - Core Concepts
     - [Leads & Subscribers](/docs/wordpress/leads-and-subscribers)
 	- [Events & Nodes](/docs/wordpress/events)
+	- [Multipage](/docs/wordpress/multipage)
 - Visual
 	- [Bot Builder](/docs/wordpress/bot-builder)
 	- [Thread Settings](/docs/wordpress/thread-settings)
