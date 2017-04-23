@@ -7,11 +7,13 @@
 
 ---
 
-> Sometimes, you'll want to send dynamic data to people. For example, the latest products of your shop, weather of your city, the product status... Giga AI provides fluent API to simply that process. Let's dig in:
+> Sometimes, you'll want to send dynamic data to people. For example, the latest products of your shop, weather of your city, the product status... Giga AI provides fluent API to simply that process. Let's digging in:
 
 <a name="getting-started"></a>
 ## Getting Started
 To send dynamic data. Simply hook into `giga_pre_seed` action, you'll have `$bot` variable, which is the instance of `MessengerBot` class that used to create nodes.
+
+You can put to any file which are loaded in your project. For example, your active theme `functions.php`.
 
 In this example, we'll send a random text to people when they say: *"help me pick some fruit tonight"*
 

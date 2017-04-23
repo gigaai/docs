@@ -2,14 +2,14 @@
 ---
 ## Version 2.3 (Frankfurt) - April 22nd, 2017
 - New: Multiple Pages (Premium).
-- New: Replace Thread Settings with Messenger Profile.
-- New: Bot now can update lead based on their data via Builder.
+- New: Replace Thread Settings with new Messenger Profile.
+- New: Bot now can update lead based on their sent data via Builder.
 - New: Logger module.
 - New: `$bot->release()` method which lets you validate and forget intended actions. 
 - Improvement: Bot Builder responses can now draggable.
 - Improvement: Search and Filter in CRM.
 - Improvement: You can now use text matching and get `$input` variable for payload.
-- Improvement: $bot->answer(); now can takes 3 arguments, the third arguments is the node attributes.
+- Improvement: `$bot->answer()` now can takes 3 arguments, the third arguments is the node attributes.
 - Improvement: Support using icon in quick replies.
 - Fix: All known CSS bugs and typo.
 - Fix: Cannot save notification when `end_at` field is null.

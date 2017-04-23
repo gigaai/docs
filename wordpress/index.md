@@ -8,7 +8,7 @@
 	- [Multipage](/docs/wordpress/multipage)
 - Visual
 	- [Bot Builder](/docs/wordpress/bot-builder)
-	- [Thread Settings](/docs/wordpress/thread-settings)
+	- [Messenger Profile](/docs/wordpress/messenger-profile)
     - [Text Matching](/docs/wordpress/text-matching)
     - [Account Linking](/docs/wordpress/account-linking)
     - [Auto Stop](/docs/wordpress/auto-stop)

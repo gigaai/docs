@@ -1,7 +1,5 @@
-# Thread Settings
+# Messenger Profile
 ---
-> This feature is deprecated. Please use [Messenger Profile](/docs/wordpress/messenger-profile) instead.
-
 - [Greeting Text](#greeting-text)
 - [Get Started Button](#get-started-button)
     - [Creating Get Started Button](#creating-get-started-button)
@@ -10,6 +8,7 @@
 - [Persistent Menu](#persistent-menu)
     - [Updating Persistent Menu](#updating-persistent-menu)
     - [Removing Persistent Menu](#removing-persistent-menu)
+- [Domain Whitelisting](#domain-whitelisting)    
 
 > Configure the Thread Settings on Messenger to improve the user-experience of your integration. These settings apply to each page individually.
 
