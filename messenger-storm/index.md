@@ -1,0 +1,3 @@
+- Getting Started
+	- [Installation](/docs/messenger-storm/installation)
+	- [Setup Messenger](/docs/messenger-storm/setup-messenger)

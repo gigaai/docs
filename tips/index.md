@@ -1,2 +1,3 @@
 - Index
 	- [How to get Facebook Page ID](/tips/how-to-get-facebook-page-id)
+	- [How to create Facebook App](/tips/how-to-create-facebook-app)
