@@ -1,3 +1,17 @@
 - Getting Started
 	- [Installation](/docs/messenger-storm/installation)
 	- [Setup Messenger](/docs/messenger-storm/setup-messenger)
+- Core Concepts
+    - [Leads & Subscribers](/docs/wordpress/leads-and-subscribers)
+    - [Events & Nodes](/docs/wordpress/events)
+- Settings
+    - [Manage Settings](/docs/messenger-storm/manage-settings)
+    - [Greeting Text](/docs/messenger-storm/greeting-text)
+    - [Get Started Button](/docs/messenger-storm/get-started-button)
+    - [Persistent Menu](/docs/messenger-storm/persistent-menu)
+    - [Domain Whitelistings](/docs/messenger-storm/domain-whitelistings)
+    - [Account Linking](/docs/messenger-storm/account-linking)
+    - [Auto Stop](/docs/messenger-storm/auto-stop)
+- Users
+    - [Adding User](/docs/messenger-storm/adding-user)
+    - [Groups & Permissions](/docs/messenger-storm/groups-permissions)
