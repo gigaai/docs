@@ -12,6 +12,7 @@
     - [Domain Whitelistings](/docs/messenger-storm/domain-whitelistings)
     - [Account Linking](/docs/messenger-storm/account-linking)
     - [Auto Stop](/docs/messenger-storm/auto-stop)
-- Users
-    - [Adding User](/docs/messenger-storm/adding-user)
-    - [Groups & Permissions](/docs/messenger-storm/groups-permissions)
+- Bot Builder
+    - [Using Bot Builder](/docs/messenger-storm/bot-builder)
+    - [Text Matching](/docs/messenger-storm/text-matching)
+    
