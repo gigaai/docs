@@ -1,5 +1,14 @@
 # Changelogs
 ---
+## Version 2.3.1 - May 08th, 2017
+- Improvement: Only cache the payload if it's postback.
+- Improvement: Add Cancel button next to Save Changes in Bot Builder.
+- Improvement: Clear Messenger Profile cache after update.
+- Improvement: List can only add 1 last button.
+- Fix: Migration error in MySQL strict mode.
+- Fix: Quick replies doesn't show.
+- Fix: Plugin typos.
+
 ## Version 2.3 (Frankfurt) - April 22nd, 2017
 - New: Multiple Pages (Premium).
 - New: Replace Thread Settings with new Messenger Profile.
