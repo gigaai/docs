@@ -3,6 +3,7 @@
 - [Add App Products](#add-app-product)
 - [Setup Webhook](#setup-webhook)
 - [Setup Messenger](#setup-messenger)
+- [Add New Page](#add-new-page)
 - [Test Your First Message](#test-your-first-message)
 
 ***
@@ -14,7 +15,9 @@ If you've already have Facebook App & Page, skip this step. Otherwise, create a 
 
 <a name="add-app-product"></a>
 ## Add App Products
-Now we'll need to add **Webhooks** and **Messenger** products to your app. Click <kbd>+ Add Product</kbd> in the menu, on each related product, click <kbd>Get Started</kbd>.
+Now we'll need to add **Webhooks** and **Messenger** products to your app. 
+- Click <kbd>+ Add Product</kbd> in the menu
+- Onn **Webhooks** and **Messenger**, click <kbd>Get Started</kbd>.
 ![Add FB Apps Products](/images/add-product.gif)
  
 <a name="setup-webhook"></a>
@@ -38,6 +41,7 @@ Now we have a webhook which ping Page events to our server. We'll need to tell w
 - Select all items (we'll talk about this later), and click <kbd>Save</kbd>
 - In **Select a page to subscribe your webhook to the page events** section, select your page and click <kbd>Subscribe</kbd>
 
+<a name="add-new-page"></a>
 ## Add New Page
 You've successfully connected to your server, now we need to add new page in your own app.
 

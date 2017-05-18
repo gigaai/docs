@@ -1,0 +1,20 @@
+- Getting Started
+	- [Welcome](/docs/api/installation)
+- Sending Message
+    - [Text](/docs/api/text)
+    - [Image](/docs/api/image)
+    - [Audio](/docs/api/audio)
+    - [Video](/docs/api/video)
+    - [File & Force Detection](/docs/api/file)
+    - [Buttons](/docs/api/buttons)
+    - [Generic](/docs/api/generic)
+    - [List](/docs/api/list)
+    - [Receipt](/docs/api/receipt)
+    - [Quick Replies](/docs/api/quick-replies)
+    - [Multiple Messages](/docs/api/multiple-messages)
+- Storage
+    - [Storage](/docs/storage)
+- Location
+    - [Location](/docs/location)
+- Multistep Conversation
+    - [Intended Actions](/docs/intended-actions)
