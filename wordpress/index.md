@@ -32,3 +32,4 @@
 - Cookbook
 - Misc
     - [Changelogs](/docs/wordpress/changelogs)
+	- [Troubleshooting](/docs/wordpress/troubleshooting)

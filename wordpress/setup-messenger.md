@@ -50,13 +50,19 @@ In WP Admin, navigate to **Giga AI \ Settings \ Basics**
 1. In **Page ID** box, enter your [Facebook Page ID](/tips/how-to-get-facebook-page-id).
 1. In **Page Access Token**, paste the Page Access Token you've received from the previous step.
 1. In **Page Name**, enter page name for manage.
-1. That's all.
+1. That's it!
 
 <a name="test-your-first-message"></a>
 ## Your First Message
 
-If you reached this step. Congratulation! All easy right? Now it's time to talk with your bot
+Congratulation! You've successfully built your bot. All easy right? Now it's time to talk with your bot
 
 Try to send hi to your page with your app's administrator account. If you get reply from your page. Congratulation! Otherwise, please check your server requirements and previous steps.
 
 ![Greeting](/images/greeting.jpg)
+
+## Now What?
+- Continue with each guide in the the documentation menu.
+- If you can't get this to work, see [Troubleshooting](/docs/troubleshooting) page.
+
+![Congratulation](/images/congratulations.png)
