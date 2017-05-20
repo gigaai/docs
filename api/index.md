@@ -7,17 +7,19 @@
     - [Video](/docs/api/video)
     - [File & Force Detection](/docs/api/file)
     - [Buttons](/docs/api/buttons)
-    - [Generic](/docs/api/generic)
+    - [Generic (Carousel)](/docs/api/generic)
     - [List](/docs/api/list)
     - [Receipt](/docs/api/receipt)
     - [Quick Replies](/docs/api/quick-replies)
+    - [Shortcode](/docs/api/shortcode)
+    - [Default Message](/docs/api/default)
     - [Multiple Messages](/docs/api/multiple-messages)
 - Handling Requests
     - [Text](/docs/api/handling-text)
-    - [Postbacks](/docs/api/handling-postbacks)
-    - [Attachment](/docs/api/handling-attachments)
-    - [Location](/docs/api/handling-location)
-- Storage
+    - [Postbacks](/docs/api/handling-postback)
+    - [Attachment & Location](/docs/api/handling-attachment)
+- Advanced
+    - [Function Callback](/docs/api/callback)
     - [Storage](/docs/storage)
-- Multistep Conversation
     - [Intended Actions](/docs/intended-actions)
+    
