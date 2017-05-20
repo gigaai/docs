@@ -20,6 +20,16 @@
     - [Attachment & Location](/docs/api/handling-attachment)
 - Advanced
     - [Function Callback](/docs/api/callback)
-    - [Storage](/docs/storage)
-    - [Intended Actions](/docs/intended-actions)
-    
+    - [Storage](/docs/api/storage)
+    - [Intended Actions](/docs/api/intended-actions)
+    - [Subscriptions](/docs/api/subscriptions)
+- Methods & Properties
+    - [answers()](/docs/api/method-answers)
+    - [says()](/docs/api/method-says)
+    - [wait()](/docs/api/method-wait)
+    - [then()](/docs/api/method-then)
+    - [getLocation()](/docs/api/method-get-location)
+    - [getUserId()](/docs/api/method-get-user-id)
+    - [keep()](/docs/api/method-keep)
+    - [release()](/docs/api/method-release)
+    - [storage](/docs/api/property-storage)

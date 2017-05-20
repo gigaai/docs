@@ -1,4 +1,4 @@
-# Handling Postbacks
+# Handling Postback
 ---
 When people click on the `postback` button, Facebook will send a request to your server which contains the payload name. Back to this example:
 
@@ -20,7 +20,7 @@ $bot->answers('button', [
 ]);
 ```
 
-When people click on the Start Chatting button, it will send a request which contains `START_CHATTING_PAYLOAD` payload. To handle this, we'll use `$bot->answer()` method again.
+When people tap on the Start Chatting button, it will send a request which contains `START_CHATTING_PAYLOAD` payload. To handle this, we'll use `$bot->answer()` method again.
 
 **Example**
 
