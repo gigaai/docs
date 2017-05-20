@@ -1,6 +1,6 @@
 - Getting Started
 	- [Welcome](/docs/api/installation)
-- Sending Message
+- Sending Messages
     - [Text](/docs/api/text)
     - [Image](/docs/api/image)
     - [Audio](/docs/api/audio)
@@ -12,9 +12,12 @@
     - [Receipt](/docs/api/receipt)
     - [Quick Replies](/docs/api/quick-replies)
     - [Multiple Messages](/docs/api/multiple-messages)
+- Handling Requests
+    - [Text](/docs/api/handling-text)
+    - [Postbacks](/docs/api/handling-postbacks)
+    - [Attachment](/docs/api/handling-attachments)
+    - [Location](/docs/api/handling-location)
 - Storage
     - [Storage](/docs/storage)
-- Location
-    - [Location](/docs/location)
 - Multistep Conversation
     - [Intended Actions](/docs/intended-actions)

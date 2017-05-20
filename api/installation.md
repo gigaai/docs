@@ -51,6 +51,6 @@ Route::get('dashboard/seed', function (MessengerBot $bot) {
 });
 ```
 
-> As you can see, when we open `dashboard/seed` URL. It basically runs the function callback which contains `MessengerBot` instance. The MessengerBot instance has already registered as a Service Provider so actually, you can put in any file of the project, not only in `routes/bot.php`, for example, you can see we use it in `BuilderController` and `SubscriptionController`. 
+> As you can see, when we open `dashboard/seed` URL. It basically runs the function callback which contains `MessengerBot` service provider. So actually, you can put in any file of the project, not only in `routes/bot.php`, for example, you can see we use it in `BuilderController` and `SubscriptionController`. 
 
 **If you don't understand what `$bot->answers()` does. Don't be panic. We'll learn it in the next chapter.**

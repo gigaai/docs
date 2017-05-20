@@ -10,7 +10,7 @@ There're some [policies](https://developers.facebook.com/docs/messenger-platform
 ### I already have `pages_messaging` permission bot my bot still doesn't responses any one except me?
 Your app status is private, please public it.
 
-### My webhook URL doesn't works, it returns 404, redirect to another pages?
+### My webhook URL doesn't works, it returns 404, redirects to another pages?
 We use native WP-API to handle requests between our plugin and Facebook. Please make sure:
 - Your permalink setting works.
 - Your `mod_rewrite` is enabled.
