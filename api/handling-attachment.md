@@ -29,7 +29,7 @@ Just like other attachment types, to set action when people sent their location,
 
 **Example**
 ```
-$bot->answer('attachment:location', function ($bot) {
+$bot->answers('attachment:location', function ($bot) {
     $location = $bot->getLocation();
 
     $lat = $location->lat;
@@ -59,7 +59,7 @@ $long   = $bot->getLocation('long');
 To saving people location, just use `$bot->storage->set()` method:
 
 ```
-$bot->answer('location:', function ($bot, $user_id) {
+$bot->answers('location:', function ($bot, $user_id) {
 	$location = $bot->getLocation();
 
 	$bot->storage->set($user_id, 'location', json_encode($location));
@@ -72,9 +72,9 @@ $bot->answer('location:', function ($bot, $user_id) {
 It's great to combine Location and Intended Actions, this example show you how to get people location to ship your pizza:
 
 ```
-$bot->answer('order pizza', 'Please send us your location')->wait('location');
+$bot->answers('order pizza', 'Please send us your location')->wait('location');
 
-$bot->answer('@location', function ($bot, $user_id) {
+$bot->answers('@location', function ($bot, $user_id) {
     
     $location = $bot->getLocation();
     

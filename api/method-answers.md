@@ -1,4 +1,4 @@
-# Answers
+# Answers Method
 ---
 The answers method can takes up to 3 arguments.
 

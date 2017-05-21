@@ -2,8 +2,7 @@
 	- [Installation](/docs/messenger-storm/installation)
 	- [Setup Messenger](/docs/messenger-storm/setup-messenger)
 - Core Concepts
-    - [Leads & Subscribers](/docs/wordpress/leads-and-subscribers)
-    - [Events & Nodes](/docs/wordpress/events)
+    - [Events & Nodes](/docs/messenger-storm/events)
 - Settings
     - [Manage Settings](/docs/messenger-storm/manage-settings)
     - [Greeting Text](/docs/messenger-storm/greeting-text)
@@ -15,4 +14,5 @@
 - Bot Builder
     - [Using Bot Builder](/docs/messenger-storm/bot-builder)
     - [Text Matching](/docs/messenger-storm/text-matching)
-    
+- Dynamic Data
+    - [API & Dynamic Data](/docs/messenger-storm/api)

@@ -3,7 +3,6 @@
 	- [Setup Messenger](/docs/wordpress/setup-messenger)
 	- [Upgrade Guide](/docs/wordpress/upgrade)
 - Core Concepts
-    - [Leads & Subscribers](/docs/wordpress/leads-and-subscribers)
 	- [Events & Nodes](/docs/wordpress/events)
 	- [Multipage](/docs/wordpress/multipage)
 - Visual
@@ -16,16 +15,8 @@
     - [Profile](/docs/wordpress/shortcodes)
     - [Generic](/docs/wordpress/shortcode-generic)
     - [Random Text](/docs/wordpress/shortcode-random-text)
-- API Reference
+- Dynamic Data
 	- [API Basic](/docs/wordpress/api)
-	- [Media](/docs/wordpress/media)
-	- [Templates](/docs/wordpress/templates)
-	- [Buttons](/docs/wordpress/buttons)
-	- [Custom Callback](/docs/wordpress/custom-callback)
-	- [Intended Actions](/docs/wordpress/intended-actions)
-	- [Quick Replies](/docs/wordpress/quick-replies)
-	- [Storage](/docs/wordpress/storage)
-	- [Subscription](/docs/wordpress/subscription)
 - Marketing Tools
     - [CRM](/docs/wordpress/crm)
     - [Subscription & Notifications](/docs/wordpress/notifications)

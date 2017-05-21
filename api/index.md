@@ -26,10 +26,7 @@
 - Methods & Properties
     - [answers()](/docs/api/method-answers)
     - [says()](/docs/api/method-says)
-    - [wait()](/docs/api/method-wait)
+    - [wait()](/docs/api/method-waits)
     - [then()](/docs/api/method-then)
     - [getLocation()](/docs/api/method-get-location)
-    - [getUserId()](/docs/api/method-get-user-id)
-    - [keep()](/docs/api/method-keep)
-    - [release()](/docs/api/method-release)
-    - [storage](/docs/api/property-storage)
+    - [keep()](/docs/api/method-keeps)

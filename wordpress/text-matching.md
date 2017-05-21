@@ -5,9 +5,9 @@
 
 ---
 
-> Giga is **case insensitive**. 
+> Giga AI is **case insensitive**. 
 
-When lead send a text, they can enter anything which you can't expected all of them. Luckily, Giga ships with powerful text matching mechanism, you have many methods to match text. The Text Matching feature works with both Bot Builder and Bot API. In Bot Builder, it's located in the **When Receive** **Text** text box. In Bot API, it's first parameter in `$bot->answer()` method. 
+When lead send a text, they can enter anything which you can't expected all of them. Luckily, Giga ships with powerful text matching mechanism, you have many methods to match text. The Text Matching feature works with both Bot Builder and Bot API. In Bot Builder, it's located in the **When Receive** **Text** text box. In Bot API, it's first parameter in `$bot->answers()` method. 
 
 <a name="sql-like-syntax"></a>
 ## SQL Like Syntax
