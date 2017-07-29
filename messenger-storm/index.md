@@ -16,3 +16,5 @@
     - [Text Matching](/docs/messenger-storm/text-matching)
 - Dynamic Data
     - [API & Dynamic Data](/docs/messenger-storm/api)
+- Miscs
+    - [Changelogs](/docs/messenger-storm/changelogs)
