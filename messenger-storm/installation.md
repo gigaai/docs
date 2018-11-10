@@ -16,12 +16,13 @@
 ### Site Requirements
 Messenger Storm built on top of Laravel and Giga AI framework so the server requirements is exactly same as Laravel.
 
-- PHP >= 5.6.4
+- PHP >= 7.1.3
 - OpenSSL PHP Extension
 - PDO PHP Extension
 - Mbstring PHP Extension
 - Tokenizer PHP Extension
 - XML PHP Extension
+- Curl PHP Extension
 - A Https Address
 
 <a name="secure-tunnels-to-localhost"></a>
