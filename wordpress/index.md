@@ -1,6 +1,6 @@
 - Getting Started
 	- [Installation](/docs/wordpress/installation)
-	- [Setup Messenger](/docs/wordpress/setup-messenger)
+	- [Setup Facebook App](/docs/wordpress/setup-facebook-app)
 	- [Upgrade Guide](/docs/wordpress/upgrade)
 - Core Concepts
 	- [Events & Nodes](/docs/wordpress/events)
