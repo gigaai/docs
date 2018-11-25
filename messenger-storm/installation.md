@@ -39,7 +39,7 @@ Sometimes you may need to configure some permissions. The  `storage` and the `bo
 Now open your website address, if you see this screen, that's perfect!
 ![Messenger Storm Home](/images/messenger-storm-home.png)
 
-To access dashboard, go to http://yourwebsite.com/dashboard
+To access dashboard, go to http://yourwebsite.com/dashboard and enter your created credentials to the login form.
 
 ![Messenger Storm Dashboard](/images/messenger-storm-dashboard.png)
 
@@ -49,8 +49,3 @@ To access dashboard, go to http://yourwebsite.com/dashboard
 Let's assume that you want to test your bots in your development environment before deploying. You'll need to let Facebook connect to your PC and it should have SSL enabled. To simply these steps, we'd recommend that you use [ngrok](https://ngrok.com), it will automatically create a secure public URL to your local webserver with format: `https://RANDOM.ngrok.io`.
 
 If you're using [Valet](https://laravel.com/docs/5.7/valet), you can simply use `valet secure site-name.dev` syntax
-
-
-<a name="installation-service"></a>
-### Installation Service
-If you do a business and don't want to take so much time for installing and setting up web server, database, we do have [Installation Service](/services/installation) for you with $49. We use [Laravel Forge](https://forge.laravel.com) which ships with latest stacks for you: Ubuntu 16.04, PHP 7.1, MariaDB, Nginx, Laravel, Giga AI latest stable version.

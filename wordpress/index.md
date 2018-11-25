@@ -1,16 +1,18 @@
 - Getting Started
 	- [Installation](/docs/wordpress/installation)
 	- [Setup Facebook App](/docs/wordpress/setup-facebook-app)
+	- [Local Development](/docs/wordpress/local-development)
 	- [Upgrade Guide](/docs/wordpress/upgrade)
 - Core Concepts
 	- [Events & Nodes](/docs/wordpress/events)
-	- [Multipage](/docs/wordpress/multipage)
+    - [Text Matching](/docs/wordpress/text-matching)
 - Visual
 	- [Bot Builder](/docs/wordpress/bot-builder)
 	- [Messenger Profile](/docs/wordpress/messenger-profile)
-    - [Text Matching](/docs/wordpress/text-matching)
     - [Account Linking](/docs/wordpress/account-linking)
     - [Auto Stop](/docs/wordpress/auto-stop)
+- AI Concepts
+    - [Natural Language Processing](/docs/wordpress/natural-language-processing)
 - Shortcodes
     - [Profile](/docs/wordpress/shortcodes)
     - [Generic](/docs/wordpress/shortcode-generic)

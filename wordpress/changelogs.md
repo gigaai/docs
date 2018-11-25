@@ -1,5 +1,29 @@
 # Changelogs
 ---
+## Version 3.0. - October 25th, 2018
+This version is totally breaking changes, please refer to [Upgrade Guide](/docs/wordpres/upgrade) before upgrade.
+
+- Breaking changes: API, Interface, PHP version support, and Database.
+- New: Facebook SDK and App Integration.
+- New: Better Multiple Pages support. You can now select pages from dropdown instead of manually enter page id and access token.
+- New: Support Facebook NLP.
+- New: Facebook Login and Profile Connect
+- New: WYSIWYG instead of Live Preview Bot Builder interface.
+- New: Support all latest Messenger Platform features.
+- New: Facebook Broadcasts & Labels (Channels) feature for faster messeage sending.
+- New: Batch messages for better performance.
+- New: Redesigned CRM.
+- New: Auto Stop and replaced by Handover Protocol. More convenience way for team working.
+- New: Typing Indicator API and message type.
+- New: Import/Export templates.
+- New: Permissions management.
+- New: Soft deletion is not implemented for all modules.
+- New: NLP shortcode, all lead profile fields can become shortcode and easier way to add shortcode. The shortcode now has ability to update lead also. And, shortcodes work in any message types at any position (for example: buttons, bubble title...)
+- New: Method resolver for callback function in `$bot->answers()` method, you don't have to remember variables position.
+- New: LightKit integration.
+- New: ParcelJS and NodeJS integrated for more convenience way to code.
+- Huge Improvement: We use Facebook batch messages for all messages which helps you got 4x performances than other scripts.
+
 ## Version 2.3.1 - May 08th, 2017
 - Improvement: Only cache the payload if it's postback.
 - Improvement: Add Cancel button next to Save Changes in Bot Builder.

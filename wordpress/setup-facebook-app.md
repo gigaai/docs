@@ -1,10 +1,11 @@
 # Setup Facebook App
 - [Create Facebook App & Page](#create-facebook-app-and-page)
 - [Connect Your Website to Facebook App](#connect-your-website-to-facebook-app)
-- [Add App Products](#add-app-product)
-- [Setup Webhook](#setup-webhook)
-- [Setup Messenger](#setup-messenger)
-- [Update Plugin Settings](#update-plugin-settings)
+- [Adding App Products](#adding-app-product)
+    - [Configure Facebook Login Product](#configure-facebook-login)
+    - [Configure Webhooks Product](#configure-webhooks)
+    - [Configure Messenger Product](#configure-messenger)
+- [Create New Bot](#create-new-bot)
 - [Test Your First Message](#test-your-first-message)
 
 ***
@@ -38,8 +39,8 @@ Now Facebook can accept connection from your website to your app. Next step is l
 ![App Settings](/images/docs-app-settings-basic.png)
 
 
-<a name="add-app-product"></a>
-## Add App Products
+<a name="adding-app-product"></a>
+## Adding App Products
 From now on, your website can connect and retrieves request from Facebook. You can add as many as products you want. In this case, we'll add three essential products: **Facebook Login**, **Webhooks**, and **Messenger**.
 
 - **Facebook Login**, as its name, lets you add Login with Facebook button to your website so people have easy way to connect to your website.
@@ -50,12 +51,14 @@ To add FB app products:
 1. Go to Facebook app, on the **PRODUCTS** section of the sidebar, click (+) to start adding products.
 1. Under **Facebook Login**, **Webhooks**, and **Messenger**, click <kbd>Set Up</kbd>
 
+<a name="configure-facebook-login"></a>
 ### Configure Facebook Login Product
 Facebook Login is Giga AI built in feature, when you add Facebook Login product, ignore the **Quick Start** form and nagivate to **Facebook Login / Settings** page.
 
 1. In **Valid OAuth Redirect URIs** text box, enter: `https://your-website.com/wp-login.php?action=fb-login`
 1. Leaves other fields blank and **Save Changes**.
 
+<a name="configure-webhooks"></a>
 ### Configure Webhooks Product
 1. Go to **Webhooks** page under PRODUCTS section.
 1. From the dropdown, select **Page** and click **Subscribe to this object**, a dialog will show up.
@@ -65,6 +68,7 @@ Facebook Login is Giga AI built in feature, when you add Facebook Login product,
 
 ![Facebook Webhook Subscribe](/images/webhook-subscribe.gif)
 
+<a name="configure-messenger"></a>
 ### Configure Messenger Product
 1. Go to Messenger page under PRODUCTS section.
 1. In Webhooks section of Messenger settings page, click <kbd>Edit events</kbd>.
@@ -101,6 +105,6 @@ Try to send hi to your page with your app's administrator account. If you get re
 
 ## Now What?
 - Continue with each guide in the the documentation menu.
-- If you can't get this to work, see [Troubleshooting](/docs/troubleshooting) page.
+- If you can't get this to work, see [Troubleshooting](/docs/troubleshooting) page. Remember that you're always welcome to ask a question in the [support forum](/support).
 
 ![Congratulation](/images/congratulations.png)
